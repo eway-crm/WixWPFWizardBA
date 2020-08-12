@@ -11,12 +11,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:views="clr-namespace:WixWPFWizardBA.Views"
         xmlns:wixWpfWizardBa="clr-namespace:WixWPFWizardBA"
-        Width="513"
-        Height="397"
+        Width="1102"
+        Height="706"
         d:DataContext="{d:DesignInstance views:WizardViewModel}"
         Closing="WizardWindow_OnClosing"
         ResizeMode="NoResize"
         WindowStartupLocation="CenterScreen"
+        WindowStyle="None"
+        BorderThickness="1"
+        BorderBrush="#e42f25"
         mc:Ignorable="d">
     <Window.Title>
         <MultiBinding StringFormat="{x:Static wixWpfWizardBa:Localisation.Wizard_WindowTitle}">
@@ -33,43 +36,6 @@
         </ResourceDictionary>
     </Window.Resources>
     <DockPanel LastChildFill="True">
-        <Grid DockPanel.Dock="Top">
-            <TextBlock Height="50"
-                       Margin="15 15 0 0"
-                       FontSize="30">
-                <TextBlock.Style>
-                    <Style TargetType="TextBlock">
-                        <Style.Triggers>
-                            <DataTrigger Binding="{Binding LaunchAction}"
-                                         Value="{x:Static bootstrapper:LaunchAction.Layout}">
-                                <Setter Property="Text" Value="{Binding Bootstrapper.BundleName, StringFormat={x:Static wixWpfWizardBa:Localisation.Wizard_HeaderCreatingOfflineInstaller}}" />
-                            </DataTrigger>
-                            <DataTrigger Binding="{Binding LaunchAction}"
-                                         Value="{x:Static bootstrapper:LaunchAction.Uninstall}">
-                                <Setter Property="Text" Value="{Binding Bootstrapper.BundleName, StringFormat={x:Static wixWpfWizardBa:Localisation.Wizard_HeaderRemoving}}" />
-                            </DataTrigger>
-                            <DataTrigger Binding="{Binding LaunchAction}"
-                                         Value="{x:Static bootstrapper:LaunchAction.Repair}">
-                                <Setter Property="Text" Value="{Binding Bootstrapper.BundleName, StringFormat={x:Static wixWpfWizardBa:Localisation.Wizard_HeaderRepairing}}" />
-                            </DataTrigger>
-                            <DataTrigger Binding="{Binding LaunchAction}"
-                                         Value="{x:Static bootstrapper:LaunchAction.Modify}">
-                                <Setter Property="Text" Value="{Binding Bootstrapper.BundleName, StringFormat={x:Static wixWpfWizardBa:Localisation.Wizard_HeaderModifying}}" />
-                            </DataTrigger>
-                        </Style.Triggers>
-                        <Setter Property="Text" Value="{Binding Bootstrapper.BundleName, StringFormat={x:Static wixWpfWizardBa:Localisation.Wizard_HeaderInstalling}}" />
-                    </Style>
-                </TextBlock.Style>
-            </TextBlock>
-            <TextBlock Margin="5 0 5 0"
-                       VerticalAlignment="Bottom"
-                       Text="{Binding Version,
-                                      Mode=OneTime}"
-                       TextAlignment="Right" />
-        </Grid>
-        <Separator Height="2"
-                   DockPanel.Dock="Top" />
-
         <Grid Height="25"
               Margin="0 0 0 15"
               HorizontalAlignment="Stretch"
@@ -226,9 +192,6 @@
                     Padding="5 0"
                     Style="{StaticResource NextButtonStyle}" />
         </Grid>
-        <Separator Height="2"
-                   Margin="0 0 0 15"
-                   DockPanel.Dock="Bottom" />
         <ContentPresenter Content="{Binding CurrentPageView}" />
     </DockPanel>
 </Window>

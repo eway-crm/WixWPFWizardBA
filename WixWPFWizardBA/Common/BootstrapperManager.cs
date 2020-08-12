@@ -41,9 +41,10 @@ namespace WixWPFWizardBA.Common
             this._bundlesToUpgrade = new List<string>();
             this.Bootstrapper = bootstrapper;
 
-            bootstrapper.DetectUpdateBegin += this.Bootstrapper_DetectUpdateBegin;
+            // TODO: Remove when not required
+            /*bootstrapper.DetectUpdateBegin += this.Bootstrapper_DetectUpdateBegin;
             bootstrapper.DetectUpdate += this.Bootstrapper_DetectUpdate;
-            bootstrapper.DetectUpdateComplete += this.Bootstrapper_DetectUpdateComplete;
+            bootstrapper.DetectUpdateComplete += this.Bootstrapper_DetectUpdateComplete;*/
 
             bootstrapper.DetectBegin += this.Bootstrapper_DetectBegin;
             bootstrapper.DetectComplete += this.Bootstrapper_DetectComplete;

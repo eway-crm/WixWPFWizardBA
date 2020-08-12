@@ -24,9 +24,6 @@
                 </Style.Triggers>
             </Style>
         </DockPanel.Resources>
-        <TextBlock DockPanel.Dock="Top"
-                   Text="{Binding Bootstrapper.BundleName,
-                                  StringFormat={x:Static wixWpfWizardBa:Localisation.WelcomePage_WelcomeText}}" />
         <Button MaxWidth="180"
                 Margin="5"
                 Command="{Binding LaunchInstallCommand}"
@@ -37,34 +34,10 @@
         </Button>
         <Button MaxWidth="180"
                 Margin="5"
-                Command="{Binding LaunchUpdateCommand}"
-                DockPanel.Dock="Top"
-                Padding="5">
-            <TextBlock Text="{x:Static wixWpfWizardBa:Localisation.WelcomePage_UpdateButtonText}"
-                       TextWrapping="Wrap" />
-        </Button>
-        <Button MaxWidth="180"
-                Margin="5"
-                Command="{Binding LaunchLayoutCommand}"
-                DockPanel.Dock="Top"
-                Padding="5">
-            <TextBlock Text="{x:Static wixWpfWizardBa:Localisation.WelcomePage_LayoutButtonText}"
-                       TextWrapping="Wrap" />
-        </Button>
-        <Button MaxWidth="180"
-                Margin="5"
                 Command="{Binding LaunchRepairCommand}"
                 DockPanel.Dock="Top"
                 Padding="5">
             <TextBlock Text="{x:Static wixWpfWizardBa:Localisation.WelcomePage_RepairButtonText}"
-                       TextWrapping="Wrap" />
-        </Button>
-        <Button MaxWidth="180"
-                Margin="5"
-                Command="{Binding LaunchModifyCommand}"
-                DockPanel.Dock="Top"
-                Padding="5">
-            <TextBlock Text="{x:Static wixWpfWizardBa:Localisation.WelcomePage_AddComponentsButtonText}"
                        TextWrapping="Wrap" />
         </Button>
         <Button MaxWidth="180"
