@@ -16,6 +16,13 @@
     <DockPanel Margin="0 0 0 50"
                LastChildFill="True">
         <DockPanel.Resources>
+            <Style TargetType="{x:Type Label}">
+                <Style.Triggers>
+                    <DataTrigger Binding="{Binding ElementName=btnInstall, Path=Visibility}" Value="Collapsed">
+                        <Setter Property="Visibility" Value="Collapsed" />
+                    </DataTrigger>
+                </Style.Triggers>
+            </Style>
             <Style TargetType="{x:Type Button}">
                 <Style.Triggers>
                     <Trigger Property="IsEnabled" Value="False">
@@ -42,7 +49,8 @@
                     DockPanel.Dock="Top"
                     Background="White"
                     BorderBrush="#858585"
-                    Padding="5">
+                    Padding="5"
+                    x:Name="btnInstall">
                 <TextBlock Text="{x:Static wixWpfWizardBa:Localisation.WelcomePage_InstallButtonText}"
                             TextWrapping="Wrap" />
             </Button>
