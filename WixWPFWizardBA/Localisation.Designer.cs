@@ -19,7 +19,7 @@ namespace WixWPFWizardBA {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     public class Localisation {
@@ -394,7 +394,7 @@ namespace WixWPFWizardBA {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to {0} has been successfully installed..
+        ///   Looks up a localized string similar to Successfully Finished.
         /// </summary>
         public static string FinishPage_InstallationFinishedSuccessfully {
             get {
@@ -403,7 +403,7 @@ namespace WixWPFWizardBA {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to An offline installer for {0} has been created successfully..
+        ///   Looks up a localized string similar to An offline installer for has been created successfully..
         /// </summary>
         public static string FinishPage_LayoutFinishedSuccessfully {
             get {
@@ -412,7 +412,7 @@ namespace WixWPFWizardBA {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to {0} has been successfully modified..
+        ///   Looks up a localized string similar to Successfully Modified.
         /// </summary>
         public static string FinishPage_ModificationFinishedSuccessfully {
             get {
@@ -430,7 +430,7 @@ namespace WixWPFWizardBA {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to {0} has been successfully repaired..
+        ///   Looks up a localized string similar to Successfully Repaired.
         /// </summary>
         public static string FinishPage_RepairFinishedSuccessfully {
             get {
@@ -448,7 +448,16 @@ namespace WixWPFWizardBA {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to {0} has been successfully removed..
+        ///   Looks up a localized string similar to Start Microsoft Outlook.
+        /// </summary>
+        public static string FinishPage_StartMicrosoftOutlook {
+            get {
+                return ResourceManager.GetString("FinishPage_StartMicrosoftOutlook", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Successfully Removed.
         /// </summary>
         public static string FinishPage_UninstallFinishedSuccessfully {
             get {
@@ -821,7 +830,7 @@ namespace WixWPFWizardBA {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Remove.
+        ///   Looks up a localized string similar to Uninstall.
         /// </summary>
         public static string WelcomePage_UninstallButtonText {
             get {

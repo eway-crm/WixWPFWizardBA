@@ -121,7 +121,6 @@ namespace WixWPFWizardBA.Views
                             return PageType.ConfigurationPage;
                         case LaunchAction.Install:
                         case LaunchAction.Modify:
-                            return PageType.LicensePage;
                         case LaunchAction.Uninstall:
                         case LaunchAction.Repair:
                             return PageType.PlanPage;

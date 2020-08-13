@@ -19,31 +19,55 @@
             <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter" />
         </ResourceDictionary>
     </ContentControl.Resources>
-    <DockPanel Margin="10">
+    <DockPanel Margin="0"
+               LastChildFill="False">
+        <DockPanel.Resources>
+            <Style TargetType="{x:Type Button}">
+                <Style.Triggers>
+                    <Trigger Property="IsEnabled" Value="False">
+                        <Setter Property="Visibility" Value="Collapsed" />
+                    </Trigger>
+                </Style.Triggers>
+                <Setter Property="FontSize" Value="22" />
+                <Setter Property="FontFamily" Value="Segoe UI" />
+                <Setter Property="BorderBrush" Value="#858585" />
+                <Setter Property="Background" Value="White" />
+                <Setter Property="Width" Value="250" />
+                <Setter Property="Height" Value="64" />
+                <Setter Property="Margin" Value="5" />
+            </Style>
+            <Style TargetType="{x:Type TextBlock}">
+                <Setter Property="Foreground" Value="#858585" />
+            </Style>
+        </DockPanel.Resources>
         <TextBlock DockPanel.Dock="Top"
-                   FontSize="24"
-                   TextWrapping="Wrap">
+                   FontSize="23"
+                   TextWrapping="Wrap"
+                   HorizontalAlignment="Center"
+                   FontFamily="Segoe UI"
+                   Foreground="#e42f25"
+                   Margin="0 0 0 50">
             <TextBlock.Style>
                 <Style TargetType="TextBlock">
                     <Style.Triggers>
                         <DataTrigger Binding="{Binding WizardViewModel.ExecutedAction}"
                                      Value="{x:Static bootstrapper:LaunchAction.Layout}">
-                            <Setter Property="Text" Value="{Binding Bootstrapper.BundleName, StringFormat={x:Static wixWpfWizardBa:Localisation.FinishPage_LayoutFinishedSuccessfully}}" />
+                            <Setter Property="Text" Value="{x:Static wixWpfWizardBa:Localisation.FinishPage_LayoutFinishedSuccessfully}" />
                         </DataTrigger>
                         <DataTrigger Binding="{Binding WizardViewModel.ExecutedAction}"
                                      Value="{x:Static bootstrapper:LaunchAction.Uninstall}">
-                            <Setter Property="Text" Value="{Binding Bootstrapper.BundleName, StringFormat={x:Static wixWpfWizardBa:Localisation.FinishPage_UninstallFinishedSuccessfully}}" />
+                            <Setter Property="Text" Value="{x:Static wixWpfWizardBa:Localisation.FinishPage_UninstallFinishedSuccessfully}" />
                         </DataTrigger>
                         <DataTrigger Binding="{Binding WizardViewModel.ExecutedAction}"
                                      Value="{x:Static bootstrapper:LaunchAction.Repair}">
-                            <Setter Property="Text" Value="{Binding Bootstrapper.BundleName, StringFormat={x:Static wixWpfWizardBa:Localisation.FinishPage_RepairFinishedSuccessfully}}" />
+                            <Setter Property="Text" Value="{x:Static wixWpfWizardBa:Localisation.FinishPage_RepairFinishedSuccessfully}" />
                         </DataTrigger>
                         <DataTrigger Binding="{Binding WizardViewModel.ExecutedAction}"
                                      Value="{x:Static bootstrapper:LaunchAction.Modify}">
-                            <Setter Property="Text" Value="{Binding Bootstrapper.BundleName, StringFormat={x:Static wixWpfWizardBa:Localisation.FinishPage_ModificationFinishedSuccessfully}}" />
+                            <Setter Property="Text" Value="{x:Static wixWpfWizardBa:Localisation.FinishPage_ModificationFinishedSuccessfully}" />
                         </DataTrigger>
                     </Style.Triggers>
-                    <Setter Property="Text" Value="{Binding Bootstrapper.BundleName, StringFormat={x:Static wixWpfWizardBa:Localisation.FinishPage_InstallationFinishedSuccessfully}}" />
+                    <Setter Property="Text" Value="{x:Static wixWpfWizardBa:Localisation.FinishPage_InstallationFinishedSuccessfully}" />
                 </Style>
             </TextBlock.Style>
         </TextBlock>
@@ -53,5 +77,13 @@
                    TextWrapping="Wrap"
                    Visibility="{Binding WizardViewModel.RestartRequired,
                                         Converter={StaticResource BooleanToVisibilityConverter}}" />
+        <Button Command="{Binding StartMicrosoftOutlookCommand}"
+                DockPanel.Dock="Top"
+                Background="White"
+                BorderBrush="#858585"
+                Padding="5">
+            <TextBlock Text="{x:Static wixWpfWizardBa:Localisation.FinishPage_StartMicrosoftOutlook}"
+                       TextWrapping="Wrap" />
+        </Button>
     </DockPanel>
 </UserControl>

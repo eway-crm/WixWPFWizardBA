@@ -19,159 +19,35 @@
     <UserControl.Resources>
         <converters:EnumToVisibilityConverter x:Key="EnumToVisibilityConverter" />
     </UserControl.Resources>
-    <DockPanel Margin="10"
-               LastChildFill="True">
-        <TextBlock DockPanel.Dock="Top"
-                   TextWrapping="Wrap">
-            <TextBlock.Style>
-                <Style TargetType="TextBlock">
-                    <Style.Triggers>
-                        <MultiDataTrigger>
-                            <MultiDataTrigger.Conditions>
-                                <Condition Binding="{Binding WizardViewModel.LaunchAction}" Value="{x:Static bootstrapper:LaunchAction.Install}" />
-                                <Condition Binding="{Binding WizardViewModel.VersionStatus}" Value="{x:Static common:VersionStatus.None}" />
-                            </MultiDataTrigger.Conditions>
-                            <Setter Property="Visibility" Value="Visible" />
-                        </MultiDataTrigger>
-                        <MultiDataTrigger>
-                            <MultiDataTrigger.Conditions>
-                                <Condition Binding="{Binding WizardViewModel.LaunchAction}" Value="{x:Static bootstrapper:LaunchAction.Install}" />
-                                <Condition Binding="{Binding WizardViewModel.VersionStatus}" Value="{x:Static common:VersionStatus.NewerAlreadyInstalled}" />
-                            </MultiDataTrigger.Conditions>
-                            <Setter Property="Visibility" Value="Visible" />
-                        </MultiDataTrigger>
-                        <MultiDataTrigger>
-                            <MultiDataTrigger.Conditions>
-                                <Condition Binding="{Binding WizardViewModel.LaunchAction}" Value="{x:Static bootstrapper:LaunchAction.Install}" />
-                                <Condition Binding="{Binding WizardViewModel.VersionStatus}" Value="{x:Static common:VersionStatus.Current}" />
-                            </MultiDataTrigger.Conditions>
-                            <Setter Property="Visibility" Value="Visible" />
-                        </MultiDataTrigger>
-                    </Style.Triggers>
-                    <Setter Property="Visibility" Value="Collapsed" />
-                </Style>
-            </TextBlock.Style>
-            <!--  In .NET 3.5, Run's Text property is not a dependency property. Unfortunately, we can't pass the bundle's name into the localisation string...  -->
-            <Run Text="{x:Static wixWpfWizardBa:Localisation.ProgressPage_InstallingTextMain}" />
-            <Run Text=" " />
-            <Bold><Run Text="{x:Static wixWpfWizardBa:Localisation.ProgressPage_InstallingTextDontTurnOffComputer}" /></Bold>
-            <LineBreak /><Run Text="{x:Static wixWpfWizardBa:Localisation.ProgressPage_InstallingTextLine1}" />
-            <LineBreak /><Run Text="{x:Static wixWpfWizardBa:Localisation.ProgressPage_InstallingTextLine2}" />
-        </TextBlock>
-        <TextBlock DockPanel.Dock="Top"
-                   TextWrapping="Wrap"
-                   Visibility="{Binding WizardViewModel.LaunchAction,
-                                        Converter={StaticResource EnumToVisibilityConverter},
-                                        ConverterParameter={x:Static bootstrapper:LaunchAction.Layout}}">
-            <Run Text="{x:Static wixWpfWizardBa:Localisation.ProgressPage_LayoutInProgressTextMain}" />
-            <Run Text=" " />
-            <LineBreak /><Run Text="{x:Static wixWpfWizardBa:Localisation.ProgressPage_LayoutInProgressTextMayTakeSomeTime}" />
-        </TextBlock>
-        <TextBlock DockPanel.Dock="Top"
-                   TextWrapping="Wrap"
-                   Visibility="{Binding WizardViewModel.LaunchAction,
-                                        Converter={StaticResource EnumToVisibilityConverter},
-                                        ConverterParameter={x:Static bootstrapper:LaunchAction.Modify}}">
-            <Run Text="{x:Static wixWpfWizardBa:Localisation.ProgressPage_InstallingComponentsTextMain}" />
-            <Run Text=" " />
-            <Bold><Run Text="{x:Static wixWpfWizardBa:Localisation.ProgressPage_InstallingTextDontTurnOffComputer}" /></Bold>
-            <LineBreak /><Run Text="{x:Static wixWpfWizardBa:Localisation.ProgressPage_InstallingTextLine1}" />
-            <LineBreak /><Run Text="{x:Static wixWpfWizardBa:Localisation.ProgressPage_InstallingTextLine2}" />
-        </TextBlock>
-        <TextBlock DockPanel.Dock="Top"
-                   TextWrapping="Wrap"
-                   Visibility="{Binding WizardViewModel.LaunchAction,
-                                        Converter={StaticResource EnumToVisibilityConverter},
-                                        ConverterParameter={x:Static bootstrapper:LaunchAction.Repair}}">
-            <Run Text="{x:Static wixWpfWizardBa:Localisation.ProgressPage_RepairingTextMain}" />
-            <Run Text=" " />
-            <Bold><Run Text="{x:Static wixWpfWizardBa:Localisation.ProgressPage_InstallingTextDontTurnOffComputer}" /></Bold>
-            <LineBreak /><Run Text="{x:Static wixWpfWizardBa:Localisation.ProgressPage_InstallingTextLine1}" />
-            <LineBreak /><Run Text="{x:Static wixWpfWizardBa:Localisation.ProgressPage_InstallingTextLine2}" />
-        </TextBlock>
-        <TextBlock DockPanel.Dock="Top"
-                   TextWrapping="Wrap"
-                   Visibility="{Binding WizardViewModel.LaunchAction,
-                                        Converter={StaticResource EnumToVisibilityConverter},
-                                        ConverterParameter={x:Static bootstrapper:LaunchAction.Cache}}">
-            <Run Text="{x:Static wixWpfWizardBa:Localisation.ProgressPage_CachingTextMain}" />
-            <Run Text=" " />
-            <Bold><Run Text="{x:Static wixWpfWizardBa:Localisation.ProgressPage_InstallingTextDontTurnOffComputer}" /></Bold>
-        </TextBlock>
-        <TextBlock DockPanel.Dock="Top"
-                   TextWrapping="Wrap"
-                   Visibility="{Binding WizardViewModel.LaunchAction,
-                                        Converter={StaticResource EnumToVisibilityConverter},
-                                        ConverterParameter={x:Static bootstrapper:LaunchAction.Uninstall}}">
-            <Run Text="{x:Static wixWpfWizardBa:Localisation.ProgressPage_RemovingTextMain}" />
-            <Run Text=" " />
-            <Bold><Run Text="{x:Static wixWpfWizardBa:Localisation.ProgressPage_InstallingTextDontTurnOffComputer}" /></Bold>
-        </TextBlock>
-        <TextBlock DockPanel.Dock="Top"
-                   TextWrapping="Wrap">
-            <TextBlock.Style>
-                <Style TargetType="TextBlock">
-                    <Style.Triggers>
-                        <MultiDataTrigger>
-                            <MultiDataTrigger.Conditions>
-                                <Condition Binding="{Binding WizardViewModel.LaunchAction}" Value="{x:Static bootstrapper:LaunchAction.Install}" />
-                                <Condition Binding="{Binding WizardViewModel.VersionStatus}" Value="{x:Static common:VersionStatus.OlderInstalled}" />
-                            </MultiDataTrigger.Conditions>
-                            <Setter Property="Visibility" Value="Visible" />
-                        </MultiDataTrigger>
-                    </Style.Triggers>
-                    <Setter Property="Visibility" Value="Collapsed" />
-                </Style>
-            </TextBlock.Style>
-            <Run Text="{x:Static wixWpfWizardBa:Localisation.ProgressPage_UpdatingTextMain}" />
-            <Run Text=" " />
-            <Bold><Run Text="{x:Static wixWpfWizardBa:Localisation.ProgressPage_InstallingTextDontTurnOffComputer}" /></Bold>
-            <LineBreak /><Run Text="{x:Static wixWpfWizardBa:Localisation.ProgressPage_InstallingTextLine1}" />
-            <LineBreak /><Run Text="{x:Static wixWpfWizardBa:Localisation.ProgressPage_UpdatingTextLine2}" />
-        </TextBlock>
+    <DockPanel Margin="0 0 0 90"
+               LastChildFill="True"
+               VerticalAlignment="Bottom">
         <ScrollViewer Focusable="False"
                       VerticalScrollBarVisibility="Auto">
             <DockPanel Focusable="False"
                        LastChildFill="True">
-                <StackPanel Margin="0 10 0 0"
-                            DockPanel.Dock="Top"
+                <StackPanel DockPanel.Dock="Top"
                             Orientation="Vertical">
-                    <TextBlock TextWrapping="Wrap">
-                        <TextBlock.Text>
-                            <MultiBinding StringFormat="{x:Static wixWpfWizardBa:Localisation.ProgressPage_TotalProgressText}">
-                                <Binding Path="Progress" />
-                            </MultiBinding>
-                        </TextBlock.Text>
-                    </TextBlock>
-                    <ProgressBar Height="20"
-                                 Maximum="100"
-                                 Minimum="0"
-                                 Value="{Binding Progress}" />
-                </StackPanel>
-                <ItemsControl ItemsSource="{Binding ProgressParts,
+                    <ItemsControl ItemsSource="{Binding ProgressParts,
                                                     UpdateSourceTrigger=PropertyChanged}">
-                    <ItemsControl.ItemTemplate>
-                        <DataTemplate>
-
-                            <StackPanel Margin="0 10 0 0"
-                                        DockPanel.Dock="Top"
-                                        Orientation="Vertical">
-                                <TextBlock TextWrapping="Wrap">
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                                <TextBlock TextWrapping="Wrap" TextAlignment="Center" FontSize="20" Foreground="#858585">
                                     <TextBlock.Text>
-                                        <MultiBinding StringFormat="{}{0}: {1}%">
-                                            <Binding Path="Description" />
-                                            <Binding Path="Progress" />
-                                        </MultiBinding>
+                                        <Binding Path="Description" />
                                     </TextBlock.Text>
                                 </TextBlock>
-                                <ProgressBar Height="20"
-                                             Maximum="100"
-                                             Minimum="0"
-                                             Value="{Binding Progress}" />
-                            </StackPanel>
-                        </DataTemplate>
-                    </ItemsControl.ItemTemplate>
-                </ItemsControl>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+                    <ProgressBar Height="5"
+                                 Maximum="100"
+                                 Minimum="0"
+                                 Margin="50 10 50 0"
+                                 Value="{Binding Progress}"
+                                 Foreground="#e42f25"
+                                 Background="#cccccc"/>
+                </StackPanel>
             </DockPanel>
         </ScrollViewer>
     </DockPanel>

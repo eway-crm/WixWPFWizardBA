@@ -154,7 +154,7 @@
     <value>Use recommended settings</value>
   </data>
   <data name="FinishPage_InstallationFinishedSuccessfully" xml:space="preserve">
-    <value>{0} has been successfully installed.</value>
+    <value>Successfully Finished</value>
   </data>
   <data name="AdvancedConfigurationPage_InstallationPathLabel" xml:space="preserve">
     <value>Installation path for {0}</value>
@@ -304,7 +304,7 @@
     <value>Repair</value>
   </data>
   <data name="WelcomePage_UninstallButtonText" xml:space="preserve">
-    <value>Remove</value>
+    <value>Uninstall</value>
   </data>
   <data name="WelcomePage_UpdateButtonText" xml:space="preserve">
     <value>Update</value>
@@ -361,16 +361,16 @@
     <value>Install</value>
   </data>
   <data name="FinishPage_LayoutFinishedSuccessfully" xml:space="preserve">
-    <value>An offline installer for {0} has been created successfully.</value>
+    <value>An offline installer for has been created successfully.</value>
   </data>
   <data name="FinishPage_ModificationFinishedSuccessfully" xml:space="preserve">
-    <value>{0} has been successfully modified.</value>
+    <value>Successfully Modified</value>
   </data>
   <data name="FinishPage_RepairFinishedSuccessfully" xml:space="preserve">
-    <value>{0} has been successfully repaired.</value>
+    <value>Successfully Repaired</value>
   </data>
   <data name="FinishPage_UninstallFinishedSuccessfully" xml:space="preserve">
-    <value>{0} has been successfully removed.</value>
+    <value>Successfully Removed</value>
   </data>
   <data name="PackageConfiguration_PackageList_WixWpfWizardBA_Demo_msi" xml:space="preserve">
     <value>WixWpfWizardBA Demo msi</value>
@@ -410,5 +410,8 @@
   </data>
   <data name="AdvancedConfigurationPage_SqlServerInstanceInstallDirLabel" xml:space="preserve">
     <value>SQL Server instance directory</value>
+  </data>
+  <data name="FinishPage_StartMicrosoftOutlook" xml:space="preserve">
+    <value>Start Microsoft Outlook</value>
   </data>
 </root>

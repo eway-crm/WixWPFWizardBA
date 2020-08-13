@@ -13,8 +13,8 @@
              d:DesignHeight="240"
              d:DesignWidth="507"
              mc:Ignorable="d">
-    <DockPanel Margin="10"
-               LastChildFill="False">
+    <DockPanel Margin="0 0 0 50"
+               LastChildFill="True">
         <DockPanel.Resources>
             <Style TargetType="{x:Type Button}">
                 <Style.Triggers>
@@ -34,28 +34,24 @@
                 <Setter Property="Foreground" Value="#858585" />
             </Style>
         </DockPanel.Resources>
-        <Label DockPanel.Dock="Top" HorizontalAlignment="Center" Margin="0 0 0 25" FontFamily="Segoe UI" FontSize="23" Foreground="#e42f25">
+        <Label DockPanel.Dock="Top" HorizontalAlignment="Center" FontFamily="Segoe UI" FontSize="23" Foreground="#e42f25">
             The Best CRM for Outlook. Ever.
         </Label>
-        <Button Command="{Binding LaunchInstallCommand}"
-                DockPanel.Dock="Top"
-                Background="White"
-                BorderBrush="#858585"
-                Padding="5">
-            <TextBlock Text="{x:Static wixWpfWizardBa:Localisation.WelcomePage_InstallButtonText}"
-                       TextWrapping="Wrap" />
-        </Button>
-        <Button Command="{Binding LaunchRepairCommand}"
-                DockPanel.Dock="Top"
-                Padding="5">
-            <TextBlock Text="{x:Static wixWpfWizardBa:Localisation.WelcomePage_RepairButtonText}"
-                       TextWrapping="Wrap" />
-        </Button>
-        <Button Command="{Binding LaunchUninstallCommand}"
-                DockPanel.Dock="Top"
-                Padding="5">
-            <TextBlock Text="{x:Static wixWpfWizardBa:Localisation.WelcomePage_UninstallButtonText}"
-                       TextWrapping="Wrap" />
-        </Button>
+        <DockPanel VerticalAlignment="Bottom">
+            <Button Command="{Binding LaunchInstallCommand}"
+                    DockPanel.Dock="Top"
+                    Background="White"
+                    BorderBrush="#858585"
+                    Padding="5">
+                <TextBlock Text="{x:Static wixWpfWizardBa:Localisation.WelcomePage_InstallButtonText}"
+                            TextWrapping="Wrap" />
+            </Button>
+            <Button Command="{Binding LaunchUninstallCommand}"
+                    DockPanel.Dock="Top"
+                    Padding="5">
+                <TextBlock Text="{x:Static wixWpfWizardBa:Localisation.WelcomePage_UninstallButtonText}"
+                            TextWrapping="Wrap" />
+            </Button>
+        </DockPanel>
     </DockPanel>
 </UserControl>

@@ -25,6 +25,12 @@ namespace WixWPFWizardBA.Views.Pages.FinishPage
                 }
                 this.Bootstrapper.Engine.Quit(wizardViewModel.Status);
             }, _ => true);
+            this.StartMicrosoftOutlookCommand = new SimpleCommand(_ =>
+            {
+                System.Diagnostics.Process.Start("OUTLOOK.EXE");
+
+                this.Bootstrapper.Engine.Quit(0);
+            }, _ => wizardViewModel.IsInstalled == false);
             this.PreviousPageCommand = new SimpleCommand(
                 _ => { this.Bootstrapper.Engine.Quit(wizardViewModel.Status); }, _ => restartRequired);
             this.CanCancel = false;
@@ -33,6 +39,9 @@ namespace WixWPFWizardBA.Views.Pages.FinishPage
         }
 
         public override ICommand NextPageCommand { get; }
+        
         public override ICommand PreviousPageCommand { get; }
+
+        public SimpleCommand StartMicrosoftOutlookCommand { get; }
     }
 }
