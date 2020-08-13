@@ -22,27 +22,36 @@
                         <Setter Property="Visibility" Value="Collapsed" />
                     </Trigger>
                 </Style.Triggers>
+                <Setter Property="FontSize" Value="22" />
+                <Setter Property="FontFamily" Value="Segoe UI" />
+                <Setter Property="BorderBrush" Value="#858585" />
+                <Setter Property="Background" Value="White" />
+                <Setter Property="Width" Value="190" />
+                <Setter Property="Height" Value="64" />
+                <Setter Property="Margin" Value="5" />
+            </Style>
+            <Style TargetType="{x:Type TextBlock}">
+                <Setter Property="Foreground" Value="#858585" />
             </Style>
         </DockPanel.Resources>
-        <Button MaxWidth="180"
-                Margin="5"
-                Command="{Binding LaunchInstallCommand}"
+        <Label DockPanel.Dock="Top" HorizontalAlignment="Center" Margin="0 0 0 25" FontFamily="Segoe UI" FontSize="23" Foreground="#e42f25">
+            The Best CRM for Outlook. Ever.
+        </Label>
+        <Button Command="{Binding LaunchInstallCommand}"
                 DockPanel.Dock="Top"
+                Background="White"
+                BorderBrush="#858585"
                 Padding="5">
             <TextBlock Text="{x:Static wixWpfWizardBa:Localisation.WelcomePage_InstallButtonText}"
                        TextWrapping="Wrap" />
         </Button>
-        <Button MaxWidth="180"
-                Margin="5"
-                Command="{Binding LaunchRepairCommand}"
+        <Button Command="{Binding LaunchRepairCommand}"
                 DockPanel.Dock="Top"
                 Padding="5">
             <TextBlock Text="{x:Static wixWpfWizardBa:Localisation.WelcomePage_RepairButtonText}"
                        TextWrapping="Wrap" />
         </Button>
-        <Button MaxWidth="180"
-                Margin="5"
-                Command="{Binding LaunchUninstallCommand}"
+        <Button Command="{Binding LaunchUninstallCommand}"
                 DockPanel.Dock="Top"
                 Padding="5">
             <TextBlock Text="{x:Static wixWpfWizardBa:Localisation.WelcomePage_UninstallButtonText}"
