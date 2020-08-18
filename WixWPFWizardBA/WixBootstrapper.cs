@@ -5,6 +5,7 @@
 namespace WixWPFWizardBA
 {
     using System;
+    using System.Diagnostics;
     using System.Globalization;
     using System.Threading;
     using System.Windows;
@@ -23,6 +24,8 @@ namespace WixWPFWizardBA
 
         protected override void Run()
         {
+            Debugger.Launch();
+
             var code = int.Parse(this.Engine.FormatString("[SystemLanguageID]"));
             var cultureInfo = CultureInfo.GetCultureInfo(code);
 

@@ -262,19 +262,19 @@
     <value>Next</value>
   </data>
   <data name="ProgressPage_ProgressCachingEntryText" xml:space="preserve">
-    <value>Caching "{0}"</value>
+    <value>Caching {0}</value>
   </data>
   <data name="ProgressPage_ProgressCopyEntryText" xml:space="preserve">
-    <value>Copying "{0}"</value>
+    <value>Copying {0}</value>
   </data>
   <data name="ProgressPage_ProgressDownloadEntryText" xml:space="preserve">
-    <value>Downloading "{0}"</value>
+    <value>Downloading {0}</value>
   </data>
   <data name="ProgressPage_ProgressExecuteEntryText" xml:space="preserve">
-    <value>Installing "{0}"</value>
+    <value>Installing {0}</value>
   </data>
   <data name="ProgressPage_ProgressExtractEntryText" xml:space="preserve">
-    <value>Extracting "{0}"</value>
+    <value>Extracting {0}</value>
   </data>
   <data name="ProgressPage_RemovingTextMain" xml:space="preserve">
     <value>Removing WixWPFWizardBA.</value>

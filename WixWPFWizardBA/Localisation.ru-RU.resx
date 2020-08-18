@@ -310,19 +310,19 @@
     <value>Это может занять много времени, в зависимости от параметров подключения.</value>
   </data>
   <data name="ProgressPage_ProgressCachingEntryText" xml:space="preserve">
-    <value>Кэширование "{0}"</value>
+    <value>Кэширование {0}</value>
   </data>
   <data name="ProgressPage_ProgressCopyEntryText" xml:space="preserve">
-    <value>Копирование "{0}"</value>
+    <value>Копирование {0}</value>
   </data>
   <data name="ProgressPage_ProgressDownloadEntryText" xml:space="preserve">
-    <value>Загрузка "{0}" с сетевого ресурса</value>
+    <value>Загрузка {0} с сетевого ресурса</value>
   </data>
   <data name="ProgressPage_ProgressExecuteEntryText" xml:space="preserve">
-    <value>Установка "{0}"</value>
+    <value>Установка {0}</value>
   </data>
   <data name="ProgressPage_ProgressExtractEntryText" xml:space="preserve">
-    <value>Распаковка "{0}"</value>
+    <value>Распаковка {0}</value>
   </data>
   <data name="ProgressPage_RemovingTextMain" xml:space="preserve">
     <value>Удаление WixWPFWizardBA.</value>

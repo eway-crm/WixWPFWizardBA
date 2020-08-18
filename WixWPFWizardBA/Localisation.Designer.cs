@@ -704,7 +704,7 @@ namespace WixWPFWizardBA {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Caching &quot;{0}&quot;.
+        ///   Looks up a localized string similar to Caching {0}.
         /// </summary>
         public static string ProgressPage_ProgressCachingEntryText {
             get {
@@ -713,7 +713,7 @@ namespace WixWPFWizardBA {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Copying &quot;{0}&quot;.
+        ///   Looks up a localized string similar to Copying {0}.
         /// </summary>
         public static string ProgressPage_ProgressCopyEntryText {
             get {
@@ -722,7 +722,7 @@ namespace WixWPFWizardBA {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Downloading &quot;{0}&quot;.
+        ///   Looks up a localized string similar to Downloading {0}.
         /// </summary>
         public static string ProgressPage_ProgressDownloadEntryText {
             get {
@@ -731,7 +731,7 @@ namespace WixWPFWizardBA {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Installing &quot;{0}&quot;.
+        ///   Looks up a localized string similar to Installing {0}.
         /// </summary>
         public static string ProgressPage_ProgressExecuteEntryText {
             get {
@@ -740,7 +740,7 @@ namespace WixWPFWizardBA {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Extracting &quot;{0}&quot;.
+        ///   Looks up a localized string similar to Extracting {0}.
         /// </summary>
         public static string ProgressPage_ProgressExtractEntryText {
             get {

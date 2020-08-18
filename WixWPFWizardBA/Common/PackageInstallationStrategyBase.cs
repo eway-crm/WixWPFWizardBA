@@ -6,12 +6,18 @@ namespace WixWPFWizardBA.Common
 {
     using System;
     using System.Collections.Generic;
+    using System.IO;
     using System.Linq;
+    using System.Reflection;
+    using System.Xml.Linq;
     using Microsoft.Tools.WindowsInstallerXml.Bootstrapper;
     using Utilities;
 
     public class PackageInstallationStrategyBase<TParam, TInstallationType> : IPackageInstallationStrategy
     {
+        XNamespace ManifestNamespace = "http://schemas.microsoft.com/wix/2010/BootstrapperApplicationData";
+        Dictionary<string, string> packages;
+
         private readonly TParam _param;
 
         public PackageInstallationStrategyBase(IList<Package<TParam, TInstallationType>> packageList,
@@ -20,6 +26,26 @@ namespace WixWPFWizardBA.Common
             this._param = param;
             this.PackageList = packageList;
             this.InstallationTypeProvider = installationTypeProvider;
+
+            this.packages = this.ApplicationData.Descendants(ManifestNamespace + "WixPackageProperties").
+                Where(x => x.Attribute("DisplayName") != null).
+                ToDictionary(x => (string)x.Attribute("Package"), y => (string)y.Attribute("DisplayName"));
+        }
+
+        public XElement ApplicationData
+        {
+            get
+            {
+                var workingFolder = Path.GetDirectoryName(this.GetType().Assembly.Location);
+                var bootstrapperDataFilePath = Path.Combine(workingFolder, "BootstrapperApplicationData.xml");
+
+                using (var reader = new StreamReader(bootstrapperDataFilePath))
+                {
+                    var xml = reader.ReadToEnd();
+                    var xDocument = XDocument.Parse(xml);
+                    return xDocument.Element(ManifestNamespace + "BootstrapperApplicationData");
+                }
+            }
         }
 
         public IList<Package<TParam, TInstallationType>> PackageList { get; }
@@ -94,6 +120,11 @@ namespace WixWPFWizardBA.Common
             var packageConfig = this.PackageList.FirstOrDefault(x => x.PackageId == packageId);
             if (packageConfig != null)
                 return packageConfig.DisplayName;
+
+            string name;
+            if (this.packages.TryGetValue(packageId, out name))
+                return name;
+
             return packageId;
         }
     }
