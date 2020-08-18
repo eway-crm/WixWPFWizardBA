@@ -26,6 +26,7 @@ namespace WixWPFWizardBA.Views
     {
         private PageType _currentPageType = PageType.None;
         private UIElement _currentPageView;
+        private Visibility _visibility;
 
         public WizardViewModel(WixBootstrapper bootstrapper) : base(bootstrapper)
         {
@@ -42,6 +43,22 @@ namespace WixWPFWizardBA.Views
             {
                 this._currentPageType = value;
                 this.OnPropertyChanged(nameof(this.CurrentPageType));
+
+                this.LogoVisibility = value == PageType.FinishErrorPage ? Visibility.Collapsed : Visibility.Visible;
+            }
+        }
+
+        public Visibility LogoVisibility
+        {
+            get
+            {
+                return this._visibility;
+            }
+            set
+            {
+                this._visibility = value;
+
+                this.OnPropertyChanged("LogoVisibility");
             }
         }
 
