@@ -37,9 +37,9 @@
     </Window.Resources>
     <DockPanel LastChildFill="True">
         <StackPanel DockPanel.Dock="Top" Width="20" Height="20" HorizontalAlignment="Right" Margin="5">
-            <Button Command="{Binding CurrentPageView.DataContext.CancelCommand}"
-                    Background="White"
-                    BorderThickness="0">
+            <Button Background="White"
+                    BorderThickness="0"
+                    Click="CloseButton_Click">
                 <Viewbox xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" Stretch="Uniform">
                     <Canvas Name="svg26" Width="24" Height="24">
                         <Canvas.RenderTransform>

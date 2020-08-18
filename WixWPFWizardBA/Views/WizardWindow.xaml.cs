@@ -63,5 +63,10 @@ namespace WixWPFWizardBA.Views
                     MessageBoxButton.OK, MessageBoxImage.Warning);
             e.Cancel = true;
         }
+
+        private void CloseButton_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
     }
 }
