@@ -53,7 +53,7 @@
                                 <PathGeometry Figures="M0 0h24v24H0z" FillRule="NonZero"/>
                             </Path.Data>
                         </Path>
-                        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path24" Fill="#000000">
+                        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path24" Fill="#858585">
                             <Path.Data>
                                 <PathGeometry Figures="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" FillRule="NonZero"/>
                             </Path.Data>
@@ -62,7 +62,7 @@
                 </Viewbox>
             </Button>
         </StackPanel>
-        <StackPanel Width="320" Height="186" HorizontalAlignment="Center" VerticalAlignment="Center" DockPanel.Dock="Top" Margin="0 60 0 0" Visibility="{Binding LogoVisibility}">
+        <StackPanel Width="320" Height="186" HorizontalAlignment="Center" VerticalAlignment="Center" DockPanel.Dock="Top" Margin="0 30 0 0" Visibility="{Binding LogoVisibility}">
             <Viewbox xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" Stretch="Uniform">
                 <Canvas Name="Layer_1" Width="960" Height="560" Canvas.Left="0" Canvas.Top="0">
                     <Canvas.RenderTransform>
