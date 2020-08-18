@@ -41,6 +41,11 @@ namespace WixWPFWizardBA.Common
 
             var architecture = SystemInformationUtilities.Is64BitSystem() ? Architecture.X64 : Architecture.X86;
             var packageConfig = this.PackageList.FirstOrDefault(x => x.PackageId == packageId);
+
+            // Let Burn decide what to do with packages we don't know about
+            if (packageConfig == null)
+                return null;
+
             switch (launchAction)
             {
                 case LaunchAction.Layout:
@@ -78,7 +83,6 @@ namespace WixWPFWizardBA.Common
                 default:
                     throw new ArgumentOutOfRangeException();
             }
-            return null;
         }
 
         public virtual void DetectAdditionalInformation()
