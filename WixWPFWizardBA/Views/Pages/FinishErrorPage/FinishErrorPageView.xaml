@@ -14,13 +14,16 @@
              mc:Ignorable="d">
     <DockPanel Margin="10">
         <TextBlock DockPanel.Dock="Top"
-                   FontSize="24"
                    Text="{Binding ErrorTitle}"
-                   TextWrapping="Wrap" />
+                   TextWrapping="Wrap"
+                   FontSize="23"
+                   FontFamily="Segoe UI"
+                   Foreground="#e42f25"/>
         <TextBlock Margin="0 15 0 0"
                    DockPanel.Dock="Top"
                    FontSize="20"
                    Text="{Binding WizardViewModel.ErrorMessage}"
-                   TextWrapping="Wrap" />
+                   TextWrapping="Wrap"
+                   Foreground="#858585" />
     </DockPanel>
 </UserControl>

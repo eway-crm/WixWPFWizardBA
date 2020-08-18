@@ -32,7 +32,6 @@
                 <Setter Property="FontFamily" Value="Segoe UI" />
                 <Setter Property="BorderBrush" Value="#858585" />
                 <Setter Property="Background" Value="White" />
-                <Setter Property="Width" Value="250" />
                 <Setter Property="Height" Value="64" />
                 <Setter Property="Margin" Value="5" />
             </Style>
@@ -77,13 +76,15 @@
                    TextWrapping="Wrap"
                    Visibility="{Binding WizardViewModel.RestartRequired,
                                         Converter={StaticResource BooleanToVisibilityConverter}}" />
-        <Button Command="{Binding StartMicrosoftOutlookCommand}"
-                DockPanel.Dock="Top"
+        <StackPanel DockPanel.Dock="Top"
+                    HorizontalAlignment="Center">
+            <Button Command="{Binding StartMicrosoftOutlookCommand}"
                 Background="White"
                 BorderBrush="#858585"
-                Padding="5">
-            <TextBlock Text="{x:Static wixWpfWizardBa:Localisation.FinishPage_StartMicrosoftOutlook}"
-                       TextWrapping="Wrap" />
-        </Button>
+                Padding="15 5 15 5">
+                <TextBlock Text="{x:Static wixWpfWizardBa:Localisation.FinishPage_StartMicrosoftOutlook}"
+                       TextWrapping="NoWrap" />
+            </Button>
+        </StackPanel>
     </DockPanel>
 </UserControl>
