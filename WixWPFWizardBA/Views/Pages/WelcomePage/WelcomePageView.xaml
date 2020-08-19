@@ -58,6 +58,12 @@
                 <TextBlock Text="{x:Static wixWpfWizardBa:Localisation.WelcomePage_UninstallButtonText}"
                             TextWrapping="Wrap" />
             </Button>
+            <Button Command="{Binding LaunchUpdateCommand}"
+                DockPanel.Dock="Top"
+                Padding="5">
+                <TextBlock Text="{x:Static wixWpfWizardBa:Localisation.WelcomePage_UpdateButtonText}"
+                       TextWrapping="Wrap" />
+            </Button>
         </DockPanel>
     </DockPanel>
 </UserControl>
