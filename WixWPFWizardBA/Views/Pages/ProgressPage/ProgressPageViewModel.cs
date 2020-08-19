@@ -114,33 +114,34 @@ namespace WixWPFWizardBA.Views.Pages.ProgressPage
 
         private ProgressEntry AddProgressEntry(string packageId, ActionType actionType)
         {
-            var progressEntry =
-                this.GetProgressEntryWithoutAdding(packageId, actionType);
+            var progressEntry = this.GetProgressEntryWithoutAdding(packageId, actionType);
 
             string description;
             var packageName = this.GetNameFromId(packageId);
             switch (actionType)
             {
                 case ActionType.Execute:
-                    description = string.Format(Localisation.ProgressPage_ProgressExecuteEntryText,
-                        packageName);
+                    if (this.Bootstrapper.Command.Action == LaunchAction.Uninstall)
+                    {
+                        description = string.Format(Localisation.ProgressPage_ProgressExecuteUninstallEntryText, packageName);
+                    }
+                    else
+                    {
+                        description = string.Format(Localisation.ProgressPage_ProgressExecuteEntryText, packageName);
+                    }
                     break;
                 case ActionType.Copy:
-                    description = string.Format(Localisation.ProgressPage_ProgressCopyEntryText,
-                        packageName);
+                    description = string.Format(Localisation.ProgressPage_ProgressCopyEntryText, packageName);
                     break;
                 case ActionType.Download:
-                    description = string.Format(Localisation.ProgressPage_ProgressDownloadEntryText,
-                        packageName);
+                    description = string.Format(Localisation.ProgressPage_ProgressDownloadEntryText, packageName);
                     break;
                 case ActionType.Extract:
-                    description = string.Format(Localisation.ProgressPage_ProgressExtractEntryText,
-                        packageName);
+                    description = string.Format(Localisation.ProgressPage_ProgressExtractEntryText, packageName);
                     break;
                 case ActionType.Caching:
                     // Should never happen, but we'll provide a value just in case.
-                    description = string.Format(Localisation.ProgressPage_ProgressCachingEntryText,
-                        packageName);
+                    description = string.Format(Localisation.ProgressPage_ProgressCachingEntryText, packageName);
                     break;
                 default:
                     throw new ArgumentOutOfRangeException(nameof(actionType), actionType, null);

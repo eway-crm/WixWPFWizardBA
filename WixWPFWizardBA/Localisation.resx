@@ -112,10 +112,10 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="ConfigurationPage_AdditionalServerSettingsHeader" xml:space="preserve">
     <value>Additional settings</value>
@@ -413,5 +413,8 @@
   </data>
   <data name="FinishPage_StartMicrosoftOutlook" xml:space="preserve">
     <value>Start Microsoft Outlook</value>
+  </data>
+  <data name="ProgressPage_ProgressExecuteUninstallEntryText" xml:space="preserve">
+    <value>Removing {0}</value>
   </data>
 </root>

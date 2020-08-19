@@ -37,7 +37,7 @@
       <Payload SourceFile="$(var.WixWPFWizardBA.TargetDir)\Ookii.Dialogs.Wpf.dll"/>
       <Payload SourceFile="$(var.WixWPFWizardBA.TargetPath)"/>
       <!-- To support localisation, we have to include the sattelite assemblies too! -->
-      <Payload SourceFile="$(var.WixWPFWizardBA.TargetDir)\ru-RU\WixWPFWizardBA.resources.dll" Name="ru-RU\WixWPFWizardBA.resources.dll"/>
+      <Payload SourceFile="$(var.WixWPFWizardBA.TargetDir)\ru\WixWPFWizardBA.resources.dll" Name="ru\WixWPFWizardBA.resources.dll"/>
     </BootstrapperApplicationRef>
 
     <Chain>

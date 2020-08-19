@@ -740,6 +740,15 @@ namespace WixWPFWizardBA {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Removing {0}.
+        /// </summary>
+        public static string ProgressPage_ProgressExecuteUninstallEntryText {
+            get {
+                return ResourceManager.GetString("ProgressPage_ProgressExecuteUninstallEntryText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Extracting {0}.
         /// </summary>
         public static string ProgressPage_ProgressExtractEntryText {

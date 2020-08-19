@@ -32,7 +32,7 @@
                                                     UpdateSourceTrigger=PropertyChanged}">
                         <ItemsControl.ItemTemplate>
                             <DataTemplate>
-                                <TextBlock TextWrapping="Wrap" TextAlignment="Center" FontSize="20" Foreground="#858585">
+                                <TextBlock TextWrapping="Wrap" TextAlignment="Center" FontSize="19" Foreground="#858585">
                                     <TextBlock.Text>
                                         <Binding Path="Description" />
                                     </TextBlock.Text>

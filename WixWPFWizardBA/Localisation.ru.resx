@@ -112,10 +112,10 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AdvancedConfigurationPage_AdditionalSqlServerInstallParameters" xml:space="preserve">
     <value>Доп. настройки установки SQL Server</value>
@@ -320,6 +320,9 @@
   </data>
   <data name="ProgressPage_ProgressExecuteEntryText" xml:space="preserve">
     <value>Установка {0}</value>
+  </data>
+  <data name="ProgressPage_ProgressExecuteUninstallEntryText" xml:space="preserve">
+    <value>Удаление {0}</value>
   </data>
   <data name="ProgressPage_ProgressExtractEntryText" xml:space="preserve">
     <value>Распаковка {0}</value>
