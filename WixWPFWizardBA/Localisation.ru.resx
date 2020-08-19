@@ -354,6 +354,9 @@
   <data name="WelcomePage_RepairButtonText" xml:space="preserve">
     <value>Починить</value>
   </data>
+  <data name="WelcomePage_Title" xml:space="preserve">
+    <value>Лучшая CRM система для Outlook</value>
+  </data>
   <data name="WelcomePage_UninstallButtonText" xml:space="preserve">
     <value>Удалить</value>
   </data>
