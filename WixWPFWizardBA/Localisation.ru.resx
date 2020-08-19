@@ -286,10 +286,10 @@
     <value>Идет планировка установки {0}...</value>
   </data>
   <data name="ProgressPage_CachingTextMain" xml:space="preserve">
-    <value>Идет кэширование компонентов WixWPFWizardBA на диск!</value>
+    <value>Идет кэширование компонентов eWay-CRM на диск!</value>
   </data>
   <data name="ProgressPage_InstallingComponentsTextMain" xml:space="preserve">
-    <value>Идет установка компонентов WixWPFWizardBA!</value>
+    <value>Идет установка компонентов eWay-CRM!</value>
   </data>
   <data name="ProgressPage_InstallingTextDontTurnOffComputer" xml:space="preserve">
     <value>Не выключайте компьютер.</value>
@@ -301,10 +301,10 @@
     <value>Недостающие компоненты будут скачаны из интернета автоматически.</value>
   </data>
   <data name="ProgressPage_InstallingTextMain" xml:space="preserve">
-    <value>Идет установка WixWPFWizardBA.</value>
+    <value>Идет установка eWay-CRM.</value>
   </data>
   <data name="ProgressPage_LayoutInProgressTextMain" xml:space="preserve">
-    <value>Идет подготовка к оффлайн-установке WixWPFWizardBA.</value>
+    <value>Идет подготовка к оффлайн-установке eWay-CRM.</value>
   </data>
   <data name="ProgressPage_LayoutInProgressTextMayTakeSomeTime" xml:space="preserve">
     <value>Это может занять много времени, в зависимости от параметров подключения.</value>
@@ -328,10 +328,10 @@
     <value>Распаковка {0}</value>
   </data>
   <data name="ProgressPage_RemovingTextMain" xml:space="preserve">
-    <value>Удаление WixWPFWizardBA.</value>
+    <value>Удаление eWay-CRM.</value>
   </data>
   <data name="ProgressPage_RepairingTextMain" xml:space="preserve">
-    <value>Починка WixWPFWizardBA.</value>
+    <value>Починка eWay-CRM.</value>
   </data>
   <data name="ProgressPage_TotalProgressText" xml:space="preserve">
     <value>Общий прогресс: {0}%</value>
@@ -340,7 +340,7 @@
     <value>Рекомендуем зайти на сайт программы и почитать, о том что поменялось!</value>
   </data>
   <data name="ProgressPage_UpdatingTextMain" xml:space="preserve">
-    <value>Идет обновление WixWPFWizardBA.</value>
+    <value>Идет обновление eWay-CRM.</value>
   </data>
   <data name="WelcomePage_AddComponentsButtonText" xml:space="preserve">
     <value>Добавить установленные компоненты</value>

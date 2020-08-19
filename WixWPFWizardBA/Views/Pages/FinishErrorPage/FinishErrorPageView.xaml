@@ -12,7 +12,22 @@
              d:DesignHeight="240"
              d:DesignWidth="507"
              mc:Ignorable="d">
-    <DockPanel Margin="35 10">
+    <DockPanel Margin="35 10 35 60"
+               LastChildFill="False">
+        <DockPanel.Resources>
+            <Style TargetType="{x:Type Button}">
+                <Setter Property="FontSize" Value="22" />
+                <Setter Property="FontFamily" Value="Segoe UI" />
+                <Setter Property="BorderBrush" Value="#858585" />
+                <Setter Property="Background" Value="White" />
+                <Setter Property="Height" Value="64" />
+                <Setter Property="Margin" Value="5" />
+                <Setter Property="MinWidth" Value="190" />
+            </Style>
+            <Style TargetType="{x:Type TextBlock}">
+                <Setter Property="Foreground" Value="#858585" />
+            </Style>
+        </DockPanel.Resources>
         <TextBlock DockPanel.Dock="Top"
                    Text="{Binding ErrorTitle}"
                    TextWrapping="Wrap"
@@ -25,5 +40,15 @@
                    Text="{Binding WizardViewModel.ErrorMessage}"
                    TextWrapping="Wrap"
                    Foreground="#858585" />
+        <DockPanel DockPanel.Dock="Bottom"
+                    HorizontalAlignment="Center">
+            <Button Command="{Binding NextPageCommand}"
+                Background="White"
+                BorderBrush="#858585"
+                Padding="15 5 15 5">
+                <TextBlock Text="{Binding NextButtonText}"
+                       TextWrapping="NoWrap" />
+            </Button>
+        </DockPanel>
     </DockPanel>
 </UserControl>

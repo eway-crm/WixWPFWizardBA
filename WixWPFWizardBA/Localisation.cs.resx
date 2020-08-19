@@ -118,229 +118,229 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="ConfigurationPage_AdditionalServerSettingsHeader" xml:space="preserve">
-    <value>Additional settings</value>
+    <value>Dodatečná nastavení</value>
   </data>
   <data name="AdvancedConfigurationPage_AdditionalSqlServerInstallParameters" xml:space="preserve">
-    <value>Additional SQL Server installation parameters</value>
+    <value>Dodatečné parametry pro instalaci SQL Server</value>
   </data>
   <data name="BrowseButtonText" xml:space="preserve">
-    <value>Browse</value>
+    <value>Procházet</value>
   </data>
   <data name="BootrapperUpdateCheckPage_CheckingForUpdatesMessage" xml:space="preserve">
-    <value>Checking for updates...</value>
+    <value>Kontrola aktualizací...</value>
   </data>
   <data name="BootstrapperUpdateAvailablePage_DownloadNewInstallerButtonText" xml:space="preserve">
-    <value>Download new installer</value>
+    <value>Stáhnout nejnovější instalaci</value>
   </data>
   <data name="FinishPage_ExitButtonText" xml:space="preserve">
-    <value>Close</value>
+    <value>Zavřít</value>
   </data>
   <data name="FinishErrorPage_FinishErrorCanceled" xml:space="preserve">
-    <value>The installation was cancelled.</value>
+    <value>Instalace byla ukončena.</value>
   </data>
   <data name="FinishErrorPage_FinishErrorConnectionError" xml:space="preserve">
-    <value>Internet connection error.</value>
+    <value>Chyba připojení k internetu.</value>
   </data>
   <data name="FinishErrorPage_FinishErrorCouldntDownloadInstallPackages" xml:space="preserve">
-    <value>Couldn't download additional packages from the internet.</value>
+    <value>Nepodařilo se stáhnout dodatečné instalační balíčky z internetu.</value>
   </data>
   <data name="FinishErrorPage_FinishErrorCouldntRetrieveInstallPackages" xml:space="preserve">
-    <value>Couldn't retrieve additional packages.</value>
+    <value>Nepodařilo se získat dodatečné instalační balíčky z internetu.</value>
   </data>
   <data name="FinishErrorPage_FinishErrorUnknown" xml:space="preserve">
-    <value>An error has occurred, status code: 0x{0:X8}</value>
+    <value>Došlo k chybě: 0x{0:X8}</value>
   </data>
   <data name="AdvancedConfigurationPage_HideAdvancedSettingsCheckbox" xml:space="preserve">
-    <value>Use recommended settings</value>
+    <value>Použít doporučená nastavení</value>
   </data>
   <data name="FinishPage_InstallationFinishedSuccessfully" xml:space="preserve">
-    <value>Successfully Finished</value>
+    <value>Úspěšně dokončeno</value>
   </data>
   <data name="AdvancedConfigurationPage_InstallationPathLabel" xml:space="preserve">
-    <value>Installation path for {0}</value>
+    <value>Instalační cesta pro {0}</value>
   </data>
   <data name="ConfigurationPage_InstallationTypeClient" xml:space="preserve">
-    <value>Client only</value>
+    <value>Pouze klient</value>
   </data>
   <data name="ConfigurationPage_InstallationTypeClientDescription" xml:space="preserve">
-    <value>Only the client will be installed. A server will have to be installed on a different computer on the network.</value>
+    <value>Bude nainstalována pouze klientská aplikace. Server bude muset být nainstalován na jiném počítači na stejné síti.</value>
   </data>
   <data name="ConfigurationPage_InstallationTypeServer" xml:space="preserve">
-    <value>Client and server</value>
+    <value>Klient a server</value>
   </data>
   <data name="ConfigurationPage_InstallationTypeServerDescription" xml:space="preserve">
-    <value>Both the client and the server will be installed.</value>
+    <value>Klient a server budou instalovány.</value>
   </data>
   <data name="BootstrapperManager_InstallErrorMessageTitle" xml:space="preserve">
-    <value>{0} - Error while installing</value>
+    <value>{0} - Chyba během instalace</value>
   </data>
   <data name="BootstrapperManager_NewerVersionInstalledMessage" xml:space="preserve">
-    <value>A newer version of is {0} already installed</value>
+    <value>Novější verze {0} je již nainstalovaná</value>
   </data>
   <data name="BootstrapperManager_NewerVersionInstalledTitle" xml:space="preserve">
-    <value>{0} - Newer version already installed</value>
+    <value>{0} - Novější verze je již nainstalovaná</value>
   </data>
   <data name="BootstrapperUpdateAvailablePage_NewInstallerAvailableMessage" xml:space="preserve">
-    <value>A new version of the installer for {0} is available.</value>
+    <value>Novější verze instalace {0} je k dispozici.</value>
   </data>
   <data name="FinishPage_RebootButtonText" xml:space="preserve">
-    <value>Reboot now</value>
+    <value>Restartovat</value>
   </data>
   <data name="FinishPage_RestartRequired" xml:space="preserve">
-    <value>To complete the installation, the computer must be rebooted.</value>
+    <value>Pro dokončení instalace je potřeba restartovat počítač.</value>
   </data>
   <data name="BootstrapperUpdateAvailablePage_RunNewInstallerButtonText" xml:space="preserve">
-    <value>Run new installer</value>
+    <value>Spustit novou instalaci</value>
   </data>
   <data name="ConfigurationPage_SqlServerAlreadyUpToDateMessage" xml:space="preserve">
-    <value>SQL Server 2014 R2 Express with Advanced Services is already installed.</value>
+    <value>SQL Server 2014 R2 Express with Advanced Services je již nainstalován.</value>
   </data>
   <data name="ConfigurationPage_SqlServerPatchWillBePerformedMessage" xml:space="preserve">
-    <value>SQL Server 2014 R2 Express with Advanced Services will be patched.</value>
+    <value>SQL Server 2014 R2 Express with Advanced Services bude aktualizován.</value>
   </data>
   <data name="ConfigurationPage_SqlServerInstanceNameTextBoxLabel" xml:space="preserve">
-    <value>Instance name:</value>
+    <value>Název instance:</value>
   </data>
   <data name="ConfigurationPage_SqlServerUnknownInstallationStateMessage" xml:space="preserve">
-    <value>Unknown SQL Server installation state.</value>
+    <value>Neznámý stav instalace SQL Server.</value>
   </data>
   <data name="ConfigurationPage_SqlServerUnsupportedUpgradeTypeMessage" xml:space="preserve">
-    <value>An unsupported upgrade path has been detected. This might be caused by 32-bit SQL Server being installed on a 64-bit operating system. You will have to upgrade SQL Server to SQL Server 2014 R2 Express with Advanced Services manually.</value>
+    <value>Nebylo možné aktualizovat SQL Server. Toto může být způsobeno 32 bitovou instalací SQL Server na 64 bitovém operačním systému. Bude potřeba provést manuální aktualizaci SQL Server na verzi SQL Server 2014 R2 Express with Advanced Services.</value>
   </data>
   <data name="ConfigurationPage_SqlServerWillBeInstalledMessage" xml:space="preserve">
-    <value>SQL Server 2014 R2 Express with Advanced Services will be installed on this computer.</value>
+    <value>SQL Server 2014 R2 Express with Advanced Services bude nainstalován.</value>
   </data>
   <data name="ConfigurationPage_SqlServerWillBeUpgradedMessage" xml:space="preserve">
-    <value>An existing installation of SQL Server will be upgraded to SQL Server 2014 R2 Express with Advanced Services.</value>
+    <value>Stávající SQL Server bude aktualizován na verzi SQL Server 2014 R2 Express with Advanced Services.</value>
   </data>
   <data name="LicensePage_AcceptLicenseAgreementCheckboxText" xml:space="preserve">
-    <value>I accept the license agreement</value>
+    <value>Přijímám licenční podmínky</value>
   </data>
   <data name="LayoutConfigurationPage_LayoutPathLabel" xml:space="preserve">
-    <value>Please select a directory to save the complete installer for {0} to:</value>
+    <value>Vyberte složku pro offline instalaci {0}:</value>
   </data>
   <data name="PlanPage_PlanningMessage" xml:space="preserve">
-    <value>Planning installation of {0}...</value>
+    <value>Příprava instalace {0}...</value>
   </data>
   <data name="Wizard_BackButtonText" xml:space="preserve">
-    <value>Back</value>
+    <value>Zpět</value>
   </data>
   <data name="ProgressPage_CachingTextMain" xml:space="preserve">
-    <value>Caching installation files on the local computer...</value>
+    <value>Ukládání instalačních souborů...</value>
   </data>
   <data name="Wizard_CancelButtonText" xml:space="preserve">
-    <value>Cancel</value>
+    <value>Storno</value>
   </data>
   <data name="CancelDialogBody" xml:space="preserve">
-    <value>Are you sure you want to cancel the installation of {0}?</value>
+    <value>Opravdu chcete ukončit instalaci {0}?</value>
   </data>
   <data name="CancelDialogTitle" xml:space="preserve">
-    <value>{0} - Setup</value>
+    <value>{0} - Instalace</value>
   </data>
   <data name="ProgressPage_InstallingComponentsTextMain" xml:space="preserve">
-    <value>Installing additional components.</value>
+    <value>Instalace dodatečných komponent.</value>
   </data>
   <data name="ProgressPage_InstallingTextDontTurnOffComputer" xml:space="preserve">
-    <value>Please don't turn off the computer. Doing so may result in damage to the operating system.</value>
+    <value>Prosím nevypínejte počítač, aby nedošlo k požkození operačního systému.</value>
   </data>
   <data name="ProgressPage_InstallingTextLine1" xml:space="preserve">
-    <value>This process may take several minutes.</value>
+    <value>Tento proces může trvat několik minut.</value>
   </data>
   <data name="ProgressPage_InstallingTextLine2" xml:space="preserve">
-    <value>Missing components will be downloaded from the internet automatically.</value>
+    <value>Chybějící komponenty budou automaticky staženy z internetu.</value>
   </data>
   <data name="ProgressPage_InstallingTextMain" xml:space="preserve">
-    <value>Installing eWay-CRM.</value>
+    <value>Instalace eWay-CRM.</value>
   </data>
   <data name="ProgressPage_LayoutInProgressTextMain" xml:space="preserve">
-    <value>Creating an offline installer for eWay-CRM.</value>
+    <value>Vytváření offline instalace eWay-CRM.</value>
   </data>
   <data name="ProgressPage_LayoutInProgressTextMayTakeSomeTime" xml:space="preserve">
-    <value>This can take some time, depending on the parameters of your internet connection.</value>
+    <value>Tato akce může trvat delší dobu v závislosti na vašem internetovém připojení.</value>
   </data>
   <data name="Wizard_NextButtonText" xml:space="preserve">
-    <value>Next</value>
+    <value>Další</value>
   </data>
   <data name="ProgressPage_ProgressCachingEntryText" xml:space="preserve">
-    <value>Caching {0}</value>
+    <value>Ukládání {0}</value>
   </data>
   <data name="ProgressPage_ProgressCopyEntryText" xml:space="preserve">
-    <value>Copying {0}</value>
+    <value>Kopírování {0}</value>
   </data>
   <data name="ProgressPage_ProgressDownloadEntryText" xml:space="preserve">
-    <value>Downloading {0}</value>
+    <value>Stahování {0}</value>
   </data>
   <data name="ProgressPage_ProgressExecuteEntryText" xml:space="preserve">
-    <value>Installing {0}</value>
+    <value>Instalování {0}</value>
   </data>
   <data name="ProgressPage_ProgressExtractEntryText" xml:space="preserve">
-    <value>Extracting {0}</value>
+    <value>Rozbalování {0}</value>
   </data>
   <data name="ProgressPage_RemovingTextMain" xml:space="preserve">
-    <value>Removing eWay-CRM.</value>
+    <value>Odstraňování eWay-CRM.</value>
   </data>
   <data name="ProgressPage_RepairingTextMain" xml:space="preserve">
-    <value>Repairing eWay-CRM.</value>
+    <value>Opravování eWay-CRM.</value>
   </data>
   <data name="ProgressPage_TotalProgressText" xml:space="preserve">
-    <value>Total progress: {0}%</value>
+    <value>Celkový průběh: {0}%</value>
   </data>
   <data name="ProgressPage_UpdatingTextLine2" xml:space="preserve">
-    <value>We recommend that you visit the website and check out what's new.</value>
+    <value>Doporučujeme navštívit webové stránky a zjistit co je nového.</value>
   </data>
   <data name="ProgressPage_UpdatingTextMain" xml:space="preserve">
-    <value>Updating eWay-CRM.</value>
+    <value>Aktualizace eWay-CRM.</value>
   </data>
   <data name="WelcomePage_AddComponentsButtonText" xml:space="preserve">
-    <value>Add components</value>
+    <value>Přidat komponenty</value>
   </data>
   <data name="WelcomePage_InstallButtonText" xml:space="preserve">
-    <value>Install</value>
+    <value>Instalovat</value>
   </data>
   <data name="WelcomePage_LayoutButtonText" xml:space="preserve">
-    <value>Create an offline installer</value>
+    <value>Vytvořit offline instalaci</value>
   </data>
   <data name="WelcomePage_RepairButtonText" xml:space="preserve">
-    <value>Repair</value>
+    <value>Opravit</value>
   </data>
   <data name="WelcomePage_UninstallButtonText" xml:space="preserve">
-    <value>Uninstall</value>
+    <value>Odinstalovat</value>
   </data>
   <data name="WelcomePage_UpdateButtonText" xml:space="preserve">
-    <value>Update</value>
+    <value>Aktualizovat</value>
   </data>
   <data name="WelcomePage_WelcomeText" xml:space="preserve">
-    <value>Welcome to the graphical installer for {0}!</value>
+    <value>Vítejte v instalačním průvodci {0}!</value>
   </data>
   <data name="CancelAlreadyInProgressMessageBoxBody" xml:space="preserve">
-    <value>Cancellation is already in progress.</value>
+    <value>Ukončování již probíhá.</value>
   </data>
   <data name="CancelAlreadyInProgressMessageBoxTitle" xml:space="preserve">
-    <value>{0} - Setup</value>
+    <value>{0} - Instalace</value>
   </data>
   <data name="CancelUnavailableMessageBoxBody" xml:space="preserve">
-    <value>Can't cancel the installation at this stage.</value>
+    <value>V této fázi není možné instalaci ukončit.</value>
   </data>
   <data name="CancelUnavailableMessageBoxTitle" xml:space="preserve">
-    <value>{0} - Setup</value>
+    <value>{0} - Instalace</value>
   </data>
   <data name="Wizard_WindowTitle" xml:space="preserve">
-    <value>{0} - Setup {1}</value>
+    <value>{0} - Instalace {1}</value>
   </data>
   <data name="Wizard_HeaderCreatingOfflineInstaller" xml:space="preserve">
-    <value>{0} - Creating offline installer</value>
+    <value>{0} - Vytváření offline instalace</value>
   </data>
   <data name="Wizard_HeaderInstalling" xml:space="preserve">
-    <value>Installing {0}</value>
+    <value>Instalování {0}</value>
   </data>
   <data name="Wizard_HeaderModifying" xml:space="preserve">
-    <value>Modifying {0}</value>
+    <value>Upravování {0}</value>
   </data>
   <data name="Wizard_HeaderRemoving" xml:space="preserve">
-    <value>Removing {0}</value>
+    <value>Odstraňování {0}</value>
   </data>
   <data name="Wizard_HeaderRepairing" xml:space="preserve">
-    <value>Repairing {0}</value>
+    <value>Opravování {0}</value>
   </data>
   <data name="Package_Netfx462Redist" xml:space="preserve">
     <value>.NET Framework 4.6.2</value>
@@ -355,22 +355,22 @@
     <value>SQL Server 2014 R2 Express with Advanced Services patch</value>
   </data>
   <data name="Package_Sql2014ExpressUpgrade" xml:space="preserve">
-    <value>Update to SQL Server 2014 R2 Express with Advanced Services</value>
+    <value>Aktualizovat na SQL Server 2014 R2 Express with Advanced Services</value>
   </data>
   <data name="InstallButtonText" xml:space="preserve">
-    <value>Install</value>
+    <value>Instalovat</value>
   </data>
   <data name="FinishPage_LayoutFinishedSuccessfully" xml:space="preserve">
-    <value>An offline installer has been created successfully.</value>
+    <value>Offline instalace byla úspěšně připravena.</value>
   </data>
   <data name="FinishPage_ModificationFinishedSuccessfully" xml:space="preserve">
-    <value>Successfully Modified</value>
+    <value>Úspěšně upraveno</value>
   </data>
   <data name="FinishPage_RepairFinishedSuccessfully" xml:space="preserve">
-    <value>Successfully Repaired</value>
+    <value>Úspěšně opraveno</value>
   </data>
   <data name="FinishPage_UninstallFinishedSuccessfully" xml:space="preserve">
-    <value>Successfully Removed</value>
+    <value>Úspěšně odinstalováno</value>
   </data>
   <data name="PackageConfiguration_PackageList_WixWpfWizardBA_Demo_msi" xml:space="preserve">
     <value>WixWpfWizardBA Demo msi</value>
@@ -400,24 +400,24 @@
     <value>.NET Framework 3.5</value>
   </data>
   <data name="WixBootstrapper_RestartPendingDialogBody" xml:space="preserve">
-    <value>There is a restart pending. Please restart your computer before attempting to install {0}.</value>
+    <value>Je vyžadován restart. Prosím proveďtě restart před instalací {0}.</value>
   </data>
   <data name="WixBootstrapper_RestartPendingDialogTitle" xml:space="preserve">
-    <value>{0} - Setup</value>
+    <value>{0} - Instalace</value>
   </data>
   <data name="FinishErrorPage_FinishErrorSqlServerRebootPending" xml:space="preserve">
-    <value>SQL Server setup failed because a reboot is pending. Please reboot your computer and try again.</value>
+    <value>Instalace SQL Server se nezdařila, protože je potřeba dokončit restart. Prosím restartujte počítač a opakujte instalaci.</value>
   </data>
   <data name="AdvancedConfigurationPage_SqlServerInstanceInstallDirLabel" xml:space="preserve">
-    <value>SQL Server instance directory</value>
+    <value>Instalační cesta pro instanci SQL Server</value>
   </data>
   <data name="FinishPage_StartMicrosoftOutlook" xml:space="preserve">
-    <value>Start Microsoft Outlook</value>
+    <value>Spustit Microsoft Outlook</value>
   </data>
   <data name="ProgressPage_ProgressExecuteUninstallEntryText" xml:space="preserve">
-    <value>Removing {0}</value>
+    <value>Odstraňování {0}</value>
   </data>
   <data name="WelcomePage_Title" xml:space="preserve">
-    <value>The Best CRM for Outlook. Ever.</value>
+    <value>Nejlepší CRM pro Outlook.</value>
   </data>
 </root>

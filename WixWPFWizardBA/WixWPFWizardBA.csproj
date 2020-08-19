@@ -184,6 +184,9 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Localisation.cs.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="Localisation.ru.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>

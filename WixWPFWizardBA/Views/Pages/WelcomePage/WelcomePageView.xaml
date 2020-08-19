@@ -13,8 +13,8 @@
              d:DesignHeight="240"
              d:DesignWidth="507"
              mc:Ignorable="d">
-    <DockPanel Margin="0 0 0 50"
-               LastChildFill="True">
+    <DockPanel Margin="0 0 0 60"
+               LastChildFill="False">
         <DockPanel.Resources>
             <Style TargetType="{x:Type Label}">
                 <Style.Triggers>
@@ -42,13 +42,11 @@
             </Style>
         </DockPanel.Resources>
         <Label DockPanel.Dock="Top" HorizontalAlignment="Center" FontFamily="Segoe UI" FontSize="23" Foreground="#e42f25">
-            The Best CRM for Outlook. Ever.
+            <TextBlock Text="{x:Static wixWpfWizardBa:Localisation.WelcomePage_Title}"></TextBlock>
         </Label>
-        <DockPanel VerticalAlignment="Bottom">
+        <DockPanel VerticalAlignment="Bottom" DockPanel.Dock="Bottom">
             <Button Command="{Binding LaunchInstallCommand}"
                     DockPanel.Dock="Top"
-                    Background="White"
-                    BorderBrush="#858585"
                     Padding="5"
                     x:Name="btnInstall">
                 <TextBlock Text="{x:Static wixWpfWizardBa:Localisation.WelcomePage_InstallButtonText}"

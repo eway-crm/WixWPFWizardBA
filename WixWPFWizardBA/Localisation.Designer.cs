@@ -403,7 +403,7 @@ namespace WixWPFWizardBA {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to An offline installer for has been created successfully..
+        ///   Looks up a localized string similar to An offline installer has been created successfully..
         /// </summary>
         public static string FinishPage_LayoutFinishedSuccessfully {
             get {
@@ -632,7 +632,7 @@ namespace WixWPFWizardBA {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Caching WixWPFWizardBA installation files on the local computer....
+        ///   Looks up a localized string similar to Caching installation files on the local computer....
         /// </summary>
         public static string ProgressPage_CachingTextMain {
             get {
@@ -659,7 +659,7 @@ namespace WixWPFWizardBA {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to This process may take from several seconds to several hours to complete..
+        ///   Looks up a localized string similar to This process may take several minutes..
         /// </summary>
         public static string ProgressPage_InstallingTextLine1 {
             get {
@@ -677,7 +677,7 @@ namespace WixWPFWizardBA {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Installing WixWPFWizardBA..
+        ///   Looks up a localized string similar to Installing eWay-CRM..
         /// </summary>
         public static string ProgressPage_InstallingTextMain {
             get {
@@ -686,7 +686,7 @@ namespace WixWPFWizardBA {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Creating an offline installer for WixWPFWizardBA..
+        ///   Looks up a localized string similar to Creating an offline installer for eWay-CRM..
         /// </summary>
         public static string ProgressPage_LayoutInProgressTextMain {
             get {
@@ -758,7 +758,7 @@ namespace WixWPFWizardBA {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Removing WixWPFWizardBA..
+        ///   Looks up a localized string similar to Removing eWay-CRM..
         /// </summary>
         public static string ProgressPage_RemovingTextMain {
             get {
@@ -767,7 +767,7 @@ namespace WixWPFWizardBA {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Repairing WixWPFWizardBA..
+        ///   Looks up a localized string similar to Repairing eWay-CRM..
         /// </summary>
         public static string ProgressPage_RepairingTextMain {
             get {
@@ -794,7 +794,7 @@ namespace WixWPFWizardBA {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Updating WixWPFWizardBA..
+        ///   Looks up a localized string similar to Updating eWay-CRM..
         /// </summary>
         public static string ProgressPage_UpdatingTextMain {
             get {
@@ -835,6 +835,15 @@ namespace WixWPFWizardBA {
         public static string WelcomePage_RepairButtonText {
             get {
                 return ResourceManager.GetString("WelcomePage_RepairButtonText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The Best CRM for Outlook. Ever..
+        /// </summary>
+        public static string WelcomePage_Title {
+            get {
+                return ResourceManager.GetString("WelcomePage_Title", resourceCulture);
             }
         }
         

@@ -38,6 +38,7 @@
       <Payload SourceFile="$(var.WixWPFWizardBA.TargetPath)"/>
       <!-- To support localisation, we have to include the sattelite assemblies too! -->
       <Payload SourceFile="$(var.WixWPFWizardBA.TargetDir)\ru\WixWPFWizardBA.resources.dll" Name="ru\WixWPFWizardBA.resources.dll"/>
+      <Payload SourceFile="$(var.WixWPFWizardBA.TargetDir)\cs\WixWPFWizardBA.resources.dll" Name="cs\WixWPFWizardBA.resources.dll"/>
     </BootstrapperApplicationRef>
 
     <Chain>

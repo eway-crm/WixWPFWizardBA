@@ -19,8 +19,8 @@
             <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter" />
         </ResourceDictionary>
     </ContentControl.Resources>
-    <DockPanel Margin="0 0 0 50"
-               LastChildFill="True">
+    <DockPanel Margin="0 0 0 60"
+               LastChildFill="False">
         <DockPanel.Resources>
             <Style TargetType="{x:Type Button}">
                 <Style.Triggers>
