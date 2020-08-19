@@ -121,7 +121,7 @@ namespace WixWPFWizardBA.Views.Pages.ProgressPage
             switch (actionType)
             {
                 case ActionType.Execute:
-                    if (this.Bootstrapper.Command.Action == LaunchAction.Uninstall)
+                    if (this.WizardViewModel.IsInstalled == true)
                     {
                         description = string.Format(Localisation.ProgressPage_ProgressExecuteUninstallEntryText, packageName);
                     }

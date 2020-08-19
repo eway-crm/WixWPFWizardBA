@@ -19,8 +19,8 @@
             <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter" />
         </ResourceDictionary>
     </ContentControl.Resources>
-    <DockPanel Margin="0"
-               LastChildFill="False">
+    <DockPanel Margin="0 0 0 50"
+               LastChildFill="True">
         <DockPanel.Resources>
             <Style TargetType="{x:Type Button}">
                 <Style.Triggers>
@@ -34,6 +34,7 @@
                 <Setter Property="Background" Value="White" />
                 <Setter Property="Height" Value="64" />
                 <Setter Property="Margin" Value="5" />
+                <Setter Property="MinWidth" Value="190" />
             </Style>
             <Style TargetType="{x:Type TextBlock}">
                 <Setter Property="Foreground" Value="#858585" />
@@ -76,15 +77,16 @@
                    TextWrapping="Wrap"
                    Visibility="{Binding WizardViewModel.RestartRequired,
                                         Converter={StaticResource BooleanToVisibilityConverter}}" />
-        <StackPanel DockPanel.Dock="Top"
+
+        <DockPanel DockPanel.Dock="Bottom"
                     HorizontalAlignment="Center">
-            <Button Command="{Binding StartMicrosoftOutlookCommand}"
+            <Button Command="{Binding NextPageCommand}"
                 Background="White"
                 BorderBrush="#858585"
                 Padding="15 5 15 5">
-                <TextBlock Text="{x:Static wixWpfWizardBa:Localisation.FinishPage_StartMicrosoftOutlook}"
+                <TextBlock Text="{Binding NextButtonText}"
                        TextWrapping="NoWrap" />
             </Button>
-        </StackPanel>
+        </DockPanel>
     </DockPanel>
 </UserControl>

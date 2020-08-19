@@ -385,7 +385,7 @@ namespace WixWPFWizardBA {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Exit.
+        ///   Looks up a localized string similar to Close.
         /// </summary>
         public static string FinishPage_ExitButtonText {
             get {

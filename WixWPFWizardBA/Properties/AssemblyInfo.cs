@@ -13,9 +13,9 @@ using WixWPFWizardBA;
 [assembly: AssemblyTitle("WixWPFWizardBA")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("eWay System s.r.o.")]
 [assembly: AssemblyProduct("WixWPFWizardBA")]
-[assembly: AssemblyCopyright("Copyright ©  2017")]
+[assembly: AssemblyCopyright("Copyright © eWay System s.r.o. 2020")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

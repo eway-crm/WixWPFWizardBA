@@ -14,7 +14,7 @@ namespace WixWPFWizardBA.Views.Pages.FinishPage
             this.BackButtonText = Localisation.FinishPage_ExitButtonText;
             this.NextButtonText = restartRequired
                 ? Localisation.FinishPage_RebootButtonText
-                : Localisation.FinishPage_ExitButtonText;
+                : wizardViewModel.IsInstalled == false ? Localisation.FinishPage_StartMicrosoftOutlook : Localisation.FinishPage_ExitButtonText;
             this.NextPageCommand = new SimpleCommand(_ =>
             {
                 if (restartRequired)
@@ -23,14 +23,14 @@ namespace WixWPFWizardBA.Views.Pages.FinishPage
                     wizardViewModel.Bootstrapper.Engine.Quit(wizardViewModel.Status);
                     return;
                 }
+
+                if (wizardViewModel.IsInstalled == false)
+                {
+                    System.Diagnostics.Process.Start("OUTLOOK.EXE");
+                }
+
                 this.Bootstrapper.Engine.Quit(wizardViewModel.Status);
             }, _ => true);
-            this.StartMicrosoftOutlookCommand = new SimpleCommand(_ =>
-            {
-                System.Diagnostics.Process.Start("OUTLOOK.EXE");
-
-                this.Bootstrapper.Engine.Quit(0);
-            }, _ => wizardViewModel.IsInstalled == false);
             this.PreviousPageCommand = new SimpleCommand(
                 _ => { this.Bootstrapper.Engine.Quit(wizardViewModel.Status); }, _ => restartRequired);
             this.CanCancel = false;
@@ -41,7 +41,5 @@ namespace WixWPFWizardBA.Views.Pages.FinishPage
         public override ICommand NextPageCommand { get; }
         
         public override ICommand PreviousPageCommand { get; }
-
-        public SimpleCommand StartMicrosoftOutlookCommand { get; }
     }
 }

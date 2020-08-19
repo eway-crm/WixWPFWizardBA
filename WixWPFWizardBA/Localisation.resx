@@ -133,7 +133,7 @@
     <value>Download new installer</value>
   </data>
   <data name="FinishPage_ExitButtonText" xml:space="preserve">
-    <value>Exit</value>
+    <value>Close</value>
   </data>
   <data name="FinishErrorPage_FinishErrorCanceled" xml:space="preserve">
     <value>The installation was cancelled.</value>
