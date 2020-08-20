@@ -623,7 +623,7 @@ namespace WixWPFWizardBA {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Planning installation of {0}....
+        ///   Looks up a localized string similar to Planning installation.
         /// </summary>
         public static string PlanPage_PlanningMessage {
             get {

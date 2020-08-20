@@ -220,7 +220,7 @@
     <value>Please select a directory to save the complete installer for {0} to:</value>
   </data>
   <data name="PlanPage_PlanningMessage" xml:space="preserve">
-    <value>Planning installation of {0}...</value>
+    <value>Planning installation</value>
   </data>
   <data name="Wizard_BackButtonText" xml:space="preserve">
     <value>Back</value>

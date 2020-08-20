@@ -220,7 +220,7 @@
     <value>Vyberte priečinok pre offline inštaláciu {0}:</value>
   </data>
   <data name="PlanPage_PlanningMessage" xml:space="preserve">
-    <value>Príprava inštalácie {0}...</value>
+    <value>Príprava inštalácie</value>
   </data>
   <data name="Wizard_BackButtonText" xml:space="preserve">
     <value>Späť</value>

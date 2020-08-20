@@ -220,7 +220,7 @@
     <value>Vyberte složku pro offline instalaci {0}:</value>
   </data>
   <data name="PlanPage_PlanningMessage" xml:space="preserve">
-    <value>Příprava instalace {0}...</value>
+    <value>Příprava instalace</value>
   </data>
   <data name="Wizard_BackButtonText" xml:space="preserve">
     <value>Zpět</value>

@@ -283,7 +283,7 @@
     <value>.NET Framework 4.6.2</value>
   </data>
   <data name="PlanPage_PlanningMessage" xml:space="preserve">
-    <value>Идет планировка установки {0}...</value>
+    <value>Идет планировка установки</value>
   </data>
   <data name="ProgressPage_CachingTextMain" xml:space="preserve">
     <value>Идет кэширование компонентов eWay-CRM на диск!</value>

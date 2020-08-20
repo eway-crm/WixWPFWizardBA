@@ -13,12 +13,9 @@
              d:DesignHeight="240"
              d:DesignWidth="507"
              mc:Ignorable="d">
-    <DockPanel Margin="10"
+    <DockPanel Margin="0 0 0 60"
                LastChildFill="True">
-        <TextBlock DockPanel.Dock="Top"
-                   Text="{Binding Bootstrapper.BundleName,
-                                  StringFormat={x:Static wixWpfWizardBa:Localisation.PlanPage_PlanningMessage}}"
-                   TextWrapping="Wrap" />
+        <TextBlock DockPanel.Dock="Top" HorizontalAlignment="Center" FontFamily="Segoe UI" FontSize="23" Foreground="#e42f25" Text="{x:Static wixWpfWizardBa:Localisation.PlanPage_PlanningMessage}"></TextBlock>
     </DockPanel>
 
 </UserControl>

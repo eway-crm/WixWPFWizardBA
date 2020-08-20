@@ -190,6 +190,9 @@
     <EmbeddedResource Include="Localisation.ru.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="Localisation.sk.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <None Include="BootstrapperCore.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
