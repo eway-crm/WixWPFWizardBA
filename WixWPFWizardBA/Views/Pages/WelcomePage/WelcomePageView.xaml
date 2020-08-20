@@ -41,9 +41,7 @@
                 <Setter Property="Foreground" Value="#858585" />
             </Style>
         </DockPanel.Resources>
-        <Label DockPanel.Dock="Top" HorizontalAlignment="Center" FontFamily="Segoe UI" FontSize="23" Foreground="#e42f25">
-            <TextBlock Text="{x:Static wixWpfWizardBa:Localisation.WelcomePage_Title}"></TextBlock>
-        </Label>
+        <TextBlock DockPanel.Dock="Top" HorizontalAlignment="Center" FontFamily="Segoe UI" FontSize="23" Foreground="#e42f25" Text="{x:Static wixWpfWizardBa:Localisation.WelcomePage_Title}"></TextBlock>
         <DockPanel VerticalAlignment="Bottom" DockPanel.Dock="Bottom">
             <Button Command="{Binding LaunchInstallCommand}"
                     DockPanel.Dock="Top"
