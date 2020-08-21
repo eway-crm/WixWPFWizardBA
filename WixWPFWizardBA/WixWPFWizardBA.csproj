@@ -187,6 +187,7 @@
     <EmbeddedResource Include="Localisation.cs.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="Localisation.no.resx" />
     <EmbeddedResource Include="Localisation.ru.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>

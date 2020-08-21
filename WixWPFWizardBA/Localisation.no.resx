@@ -118,229 +118,229 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="ConfigurationPage_AdditionalServerSettingsHeader" xml:space="preserve">
-    <value>Additional settings</value>
+    <value>Tilleggsinnstillinger</value>
   </data>
   <data name="AdvancedConfigurationPage_AdditionalSqlServerInstallParameters" xml:space="preserve">
-    <value>Additional SQL Server installation parameters</value>
+    <value>Andre installasjonsparametere for SQL Server</value>
   </data>
   <data name="BrowseButtonText" xml:space="preserve">
-    <value>Browse</value>
+    <value>Søk</value>
   </data>
   <data name="BootrapperUpdateCheckPage_CheckingForUpdatesMessage" xml:space="preserve">
-    <value>Checking for updates...</value>
+    <value>Ser etter oppdateringer...</value>
   </data>
   <data name="BootstrapperUpdateAvailablePage_DownloadNewInstallerButtonText" xml:space="preserve">
-    <value>Download new installer</value>
+    <value>Last ned nytt installasjonsprogram</value>
   </data>
   <data name="FinishPage_ExitButtonText" xml:space="preserve">
-    <value>Close</value>
+    <value>Lukk</value>
   </data>
   <data name="FinishErrorPage_FinishErrorCanceled" xml:space="preserve">
-    <value>The installation was cancelled.</value>
+    <value>Installasjonen ble avbrutt.</value>
   </data>
   <data name="FinishErrorPage_FinishErrorConnectionError" xml:space="preserve">
-    <value>Internet connection error.</value>
+    <value>Feil på internettforbindelsen.</value>
   </data>
   <data name="FinishErrorPage_FinishErrorCouldntDownloadInstallPackages" xml:space="preserve">
-    <value>Couldn't download additional packages from the internet.</value>
+    <value>Kunne ikke laste ned tilleggspakker fra internett.</value>
   </data>
   <data name="FinishErrorPage_FinishErrorCouldntRetrieveInstallPackages" xml:space="preserve">
-    <value>Couldn't retrieve additional packages.</value>
+    <value>Kunne ikke hente tilleggspakker.</value>
   </data>
   <data name="FinishErrorPage_FinishErrorUnknown" xml:space="preserve">
-    <value>An error has occurred, status code: 0x{0:X8}</value>
+    <value>Det oppsto en feil, feilkode: 0x{0:X8}</value>
   </data>
   <data name="AdvancedConfigurationPage_HideAdvancedSettingsCheckbox" xml:space="preserve">
-    <value>Use recommended settings</value>
+    <value>Bruk anbefalte innstillinger</value>
   </data>
   <data name="FinishPage_InstallationFinishedSuccessfully" xml:space="preserve">
-    <value>Successfully Finished</value>
+    <value>Installasjonen var vellykket</value>
   </data>
   <data name="AdvancedConfigurationPage_InstallationPathLabel" xml:space="preserve">
-    <value>Installation path for {0}</value>
+    <value>Installasjonssti for {0}</value>
   </data>
   <data name="ConfigurationPage_InstallationTypeClient" xml:space="preserve">
-    <value>Client only</value>
+    <value>Kun klient</value>
   </data>
   <data name="ConfigurationPage_InstallationTypeClientDescription" xml:space="preserve">
-    <value>Only the client will be installed. A server will have to be installed on a different computer on the network.</value>
+    <value>Kun klienten blir installert. En server må installeres på en annen datamaskin i nettverket.</value>
   </data>
   <data name="ConfigurationPage_InstallationTypeServer" xml:space="preserve">
-    <value>Client and server</value>
+    <value>Klient og server</value>
   </data>
   <data name="ConfigurationPage_InstallationTypeServerDescription" xml:space="preserve">
-    <value>Both the client and the server will be installed.</value>
+    <value>Både klient og server blir installert.</value>
   </data>
   <data name="BootstrapperManager_InstallErrorMessageTitle" xml:space="preserve">
-    <value>{0} - Error while installing</value>
+    <value>{0} – Feil under installasjon</value>
   </data>
   <data name="BootstrapperManager_NewerVersionInstalledMessage" xml:space="preserve">
-    <value>A newer version of is {0} already installed</value>
+    <value>Det finnes allerede en nyere versjon av {0} </value>
   </data>
   <data name="BootstrapperManager_NewerVersionInstalledTitle" xml:space="preserve">
-    <value>{0} - Newer version already installed</value>
+    <value>{0} – Nyere versjon allerede installert</value>
   </data>
   <data name="BootstrapperUpdateAvailablePage_NewInstallerAvailableMessage" xml:space="preserve">
-    <value>A new version of the installer for {0} is available.</value>
+    <value>En ny versjon av installasjonsprogrammet for {0} er tilgjengelig.</value>
   </data>
   <data name="FinishPage_RebootButtonText" xml:space="preserve">
-    <value>Reboot now</value>
+    <value>Start på nytt nå</value>
   </data>
   <data name="FinishPage_RestartRequired" xml:space="preserve">
-    <value>To complete the installation, the computer must be rebooted.</value>
+    <value>Det må kjøres omstart på datamaskinen for å ferdigstille installasjonen.</value>
   </data>
   <data name="BootstrapperUpdateAvailablePage_RunNewInstallerButtonText" xml:space="preserve">
-    <value>Run new installer</value>
+    <value>Kjør det nye installasjonsprogrammet</value>
   </data>
   <data name="ConfigurationPage_SqlServerAlreadyUpToDateMessage" xml:space="preserve">
-    <value>SQL Server 2014 R2 Express with Advanced Services is already installed.</value>
+    <value>SQL Server 2014 R2 Express med Advanced Services er allerede installert.</value>
   </data>
   <data name="ConfigurationPage_SqlServerPatchWillBePerformedMessage" xml:space="preserve">
-    <value>SQL Server 2014 R2 Express with Advanced Services will be patched.</value>
+    <value>SQL Server 2014 R2 Express med Advanced Services blir oppdatert.</value>
   </data>
   <data name="ConfigurationPage_SqlServerInstanceNameTextBoxLabel" xml:space="preserve">
-    <value>Instance name:</value>
+    <value>Instansenavn:</value>
   </data>
   <data name="ConfigurationPage_SqlServerUnknownInstallationStateMessage" xml:space="preserve">
-    <value>Unknown SQL Server installation state.</value>
+    <value>Status på installasjon av SQL Server er ukjent.</value>
   </data>
   <data name="ConfigurationPage_SqlServerUnsupportedUpgradeTypeMessage" xml:space="preserve">
-    <value>An unsupported upgrade path has been detected. This might be caused by 32-bit SQL Server being installed on a 64-bit operating system. You will have to upgrade SQL Server to SQL Server 2014 R2 Express with Advanced Services manually.</value>
+    <value>Det ble oppdaget en oppgraderingssti som ikke er støttet. Dette kan skyldes at en 32-bit SQL Server blir installert på et 64-bit operativsystem. Du må oppgradere SQL Server til SQL Server 2014 R2 Express med Advanced Services manuelt.</value>
   </data>
   <data name="ConfigurationPage_SqlServerWillBeInstalledMessage" xml:space="preserve">
-    <value>SQL Server 2014 R2 Express with Advanced Services will be installed on this computer.</value>
+    <value>SQL Server 2014 R2 Express med Advanced Services blir installert på denne datamaskinen.</value>
   </data>
   <data name="ConfigurationPage_SqlServerWillBeUpgradedMessage" xml:space="preserve">
-    <value>An existing installation of SQL Server will be upgraded to SQL Server 2014 R2 Express with Advanced Services.</value>
+    <value>En eksisterende installasjon av SQL Server blir oppgradert til SQL Server 2014 R2 Express med Advanced Services.</value>
   </data>
   <data name="LicensePage_AcceptLicenseAgreementCheckboxText" xml:space="preserve">
-    <value>I accept the license agreement</value>
+    <value>Jeg godtar lisensavtalen </value>
   </data>
   <data name="LayoutConfigurationPage_LayoutPathLabel" xml:space="preserve">
-    <value>Please select a directory to save the complete installer for {0} to:</value>
+    <value>Vennligst velg en sti for lagring av det komplette installasjonsprogrammet for {0} til:</value>
   </data>
   <data name="PlanPage_PlanningMessage" xml:space="preserve">
-    <value>Planning installation</value>
+    <value>Planlegger installasjon</value>
   </data>
   <data name="Wizard_BackButtonText" xml:space="preserve">
-    <value>Back</value>
+    <value>Tilbake</value>
   </data>
   <data name="ProgressPage_CachingTextMain" xml:space="preserve">
-    <value>Caching installation files on the local computer...</value>
+    <value>Legger installasjonsfilene I hurtiglager på den lokale datamaskinen...</value>
   </data>
   <data name="Wizard_CancelButtonText" xml:space="preserve">
-    <value>Cancel</value>
+    <value>Avbryt</value>
   </data>
   <data name="CancelDialogBody" xml:space="preserve">
-    <value>Are you sure you want to cancel the installation of {0}?</value>
+    <value>Ønsker du virkelig å avbryte installasjonen av {0}?</value>
   </data>
   <data name="CancelDialogTitle" xml:space="preserve">
-    <value>{0} - Setup</value>
+    <value>{0} - Oppsett</value>
   </data>
   <data name="ProgressPage_InstallingComponentsTextMain" xml:space="preserve">
-    <value>Installing additional components.</value>
+    <value>Installerer tilleggskomponenter.</value>
   </data>
   <data name="ProgressPage_InstallingTextDontTurnOffComputer" xml:space="preserve">
-    <value>Please don't turn off the computer. Doing so may result in damage to the operating system.</value>
+    <value>Vennligst ikke skru av datamaskinen. Det vil kunne skade operativsystemet.</value>
   </data>
   <data name="ProgressPage_InstallingTextLine1" xml:space="preserve">
-    <value>This process may take several minutes.</value>
+    <value>Denne prosessen kan ta flere minutter.</value>
   </data>
   <data name="ProgressPage_InstallingTextLine2" xml:space="preserve">
-    <value>Missing components will be downloaded from the internet automatically.</value>
+    <value>Manglende komponenter blir automatisk lastet ned fra internett.</value>
   </data>
   <data name="ProgressPage_InstallingTextMain" xml:space="preserve">
-    <value>Installing eWay-CRM.</value>
+    <value>Installerer eWay-CRM.</value>
   </data>
   <data name="ProgressPage_LayoutInProgressTextMain" xml:space="preserve">
-    <value>Creating an offline installer for eWay-CRM.</value>
+    <value>Oppretter et offline installalasjonsprogram for eWay-CRM.</value>
   </data>
   <data name="ProgressPage_LayoutInProgressTextMayTakeSomeTime" xml:space="preserve">
-    <value>This can take some time, depending on the parameters of your internet connection.</value>
+    <value>Dette kan ta litt tid, avhengig av parametere for din intenettforbindelse.</value>
   </data>
   <data name="Wizard_NextButtonText" xml:space="preserve">
-    <value>Next</value>
+    <value>Neste</value>
   </data>
   <data name="ProgressPage_ProgressCachingEntryText" xml:space="preserve">
-    <value>Caching {0}</value>
+    <value>Legger i hurtiglager {0}</value>
   </data>
   <data name="ProgressPage_ProgressCopyEntryText" xml:space="preserve">
-    <value>Copying {0}</value>
+    <value>Kopierer {0}</value>
   </data>
   <data name="ProgressPage_ProgressDownloadEntryText" xml:space="preserve">
-    <value>Downloading {0}</value>
+    <value>Laster ned {0}</value>
   </data>
   <data name="ProgressPage_ProgressExecuteEntryText" xml:space="preserve">
-    <value>Installing {0}</value>
+    <value>Installerer {0}</value>
   </data>
   <data name="ProgressPage_ProgressExtractEntryText" xml:space="preserve">
-    <value>Extracting {0}</value>
+    <value>Pakker ut {0}</value>
   </data>
   <data name="ProgressPage_RemovingTextMain" xml:space="preserve">
-    <value>Removing eWay-CRM.</value>
+    <value>Fjerner eWay-CRM.</value>
   </data>
   <data name="ProgressPage_RepairingTextMain" xml:space="preserve">
-    <value>Repairing eWay-CRM.</value>
+    <value>Reparerer eWay-CRM.</value>
   </data>
   <data name="ProgressPage_TotalProgressText" xml:space="preserve">
-    <value>Total progress: {0}%</value>
+    <value>Total framdrift: {0}%</value>
   </data>
   <data name="ProgressPage_UpdatingTextLine2" xml:space="preserve">
-    <value>We recommend that you visit the website and check out what's new.</value>
+    <value>Vi anbefaler at du besøker vår webside og sjekker hva som er nytt.</value>
   </data>
   <data name="ProgressPage_UpdatingTextMain" xml:space="preserve">
-    <value>Updating eWay-CRM.</value>
+    <value>Oppdaterer eWay-CRM.</value>
   </data>
   <data name="WelcomePage_AddComponentsButtonText" xml:space="preserve">
-    <value>Add components</value>
+    <value>Legg til komponenter</value>
   </data>
   <data name="WelcomePage_InstallButtonText" xml:space="preserve">
-    <value>Install</value>
+    <value>Installer</value>
   </data>
   <data name="WelcomePage_LayoutButtonText" xml:space="preserve">
-    <value>Create an offline installer</value>
+    <value>Opprett et offline installasjonsprogram</value>
   </data>
   <data name="WelcomePage_RepairButtonText" xml:space="preserve">
-    <value>Repair</value>
+    <value>Reparer</value>
   </data>
   <data name="WelcomePage_UninstallButtonText" xml:space="preserve">
-    <value>Uninstall</value>
+    <value>Avinstaller</value>
   </data>
   <data name="WelcomePage_UpdateButtonText" xml:space="preserve">
-    <value>Update</value>
+    <value>Oppdater</value>
   </data>
   <data name="WelcomePage_WelcomeText" xml:space="preserve">
-    <value>Welcome to the graphical installer for {0}!</value>
+    <value>Velkommen til det grafiske installasjonsprogrammet for {0}!</value>
   </data>
   <data name="CancelAlreadyInProgressMessageBoxBody" xml:space="preserve">
-    <value>Cancellation is already in progress.</value>
+    <value>Installasjonen er allerede i ferd med å avbrytes.</value>
   </data>
   <data name="CancelAlreadyInProgressMessageBoxTitle" xml:space="preserve">
-    <value>{0} - Setup</value>
+    <value>{0} - Oppsett</value>
   </data>
   <data name="CancelUnavailableMessageBoxBody" xml:space="preserve">
-    <value>Can't cancel the installation at this stage.</value>
+    <value>Kan ikke avbryte installasjonen I denne fasen.</value>
   </data>
   <data name="CancelUnavailableMessageBoxTitle" xml:space="preserve">
-    <value>{0} - Setup</value>
+    <value>{0} - Oppsett</value>
   </data>
   <data name="Wizard_WindowTitle" xml:space="preserve">
-    <value>{0} - Setup {1}</value>
+    <value>{0} - Oppsett {1}</value>
   </data>
   <data name="Wizard_HeaderCreatingOfflineInstaller" xml:space="preserve">
-    <value>{0} - Creating offline installer</value>
+    <value>{0} – Oppretter et offline installasjonsprogram</value>
   </data>
   <data name="Wizard_HeaderInstalling" xml:space="preserve">
-    <value>Installing {0}</value>
+    <value>Installerer {0}</value>
   </data>
   <data name="Wizard_HeaderModifying" xml:space="preserve">
-    <value>Modifying {0}</value>
+    <value>Endrer {0}</value>
   </data>
   <data name="Wizard_HeaderRemoving" xml:space="preserve">
-    <value>Removing {0}</value>
+    <value>Fjerner {0}</value>
   </data>
   <data name="Wizard_HeaderRepairing" xml:space="preserve">
-    <value>Repairing {0}</value>
+    <value>Reparerer {0}</value>
   </data>
   <data name="Package_Netfx462Redist" xml:space="preserve">
     <value>.NET Framework 4.6.2</value>
@@ -349,28 +349,28 @@
     <value>WixWpfWizardBA Demo msi</value>
   </data>
   <data name="Package_Sql2014Express" xml:space="preserve">
-    <value>SQL Server 2014 R2 Express with Advanced Services</value>
+    <value>SQL Server 2014 R2 Express med Advanced Services</value>
   </data>
   <data name="Package_Sql2014ExpressPatch" xml:space="preserve">
-    <value>SQL Server 2014 R2 Express with Advanced Services patch</value>
+    <value>SQL Server 2014 R2 Express med Advanced Services oppdatering</value>
   </data>
   <data name="Package_Sql2014ExpressUpgrade" xml:space="preserve">
-    <value>Update to SQL Server 2014 R2 Express with Advanced Services</value>
+    <value>Oppdatering til SQL Server 2014 R2 Express med Advanced Services</value>
   </data>
   <data name="InstallButtonText" xml:space="preserve">
-    <value>Install</value>
+    <value>Installer</value>
   </data>
   <data name="FinishPage_LayoutFinishedSuccessfully" xml:space="preserve">
-    <value>An offline installer has been created successfully.</value>
+    <value>Opprettelse av offline installasjonsprogram var vellykket.</value>
   </data>
   <data name="FinishPage_ModificationFinishedSuccessfully" xml:space="preserve">
-    <value>Successfully Modified</value>
+    <value>Endringen var vellykket</value>
   </data>
   <data name="FinishPage_RepairFinishedSuccessfully" xml:space="preserve">
-    <value>Successfully Repaired</value>
+    <value>Reparasjonen var vellykket</value>
   </data>
   <data name="FinishPage_UninstallFinishedSuccessfully" xml:space="preserve">
-    <value>Successfully Removed</value>
+    <value>Fjerning var vellykket</value>
   </data>
   <data name="PackageConfiguration_PackageList_WixWpfWizardBA_Demo_msi" xml:space="preserve">
     <value>WixWpfWizardBA Demo msi</value>
@@ -379,45 +379,45 @@
     <value>.NET Framework 4.6.2</value>
   </data>
   <data name="PackageConfiguration_PackageList_SQL_Server_2014_with_Advanced_Services__32_bit_" xml:space="preserve">
-    <value>SQL Server 2014 with Advanced Services (32-bit)</value>
+    <value>SQL Server 2014 med Advanced Services (32-bit)</value>
   </data>
   <data name="PackageConfiguration_PackageList_Upgrade_to_SQL_Server_2014_with_Advanced_Services__32_bit_" xml:space="preserve">
-    <value>Upgrade to SQL Server 2014 with Advanced Services (32-bit)</value>
+    <value>Oppgradering til SQL Server 2014 med Advanced Services (32-bit)</value>
   </data>
   <data name="PackageConfiguration_PackageList_SQL_Server_2014_with_Advanced_Services__32_bit__patch" xml:space="preserve">
-    <value>SQL Server 2014 with Advanced Services (32-bit) patch</value>
+    <value>SQL Server 2014 med Advanced Services (32-bit) oppdatering</value>
   </data>
   <data name="PackageConfiguration_PackageList_SQL_Server_2014_with_Advanced_Services__64_bit_" xml:space="preserve">
-    <value>SQL Server 2014 with Advanced Services (64-bit)</value>
+    <value>SQL Server 2014 med Advanced Services (64-bit)</value>
   </data>
   <data name="PackageConfiguration_PackageList_Upgrade_to_SQL_Server_2014_with_Advanced_Services__64_bit_" xml:space="preserve">
-    <value>Upgrade to SQL Server 2014 with Advanced Services (64-bit)</value>
+    <value>Oppgradering til SQL Server 2014 med Advanced Services (64-bit)</value>
   </data>
   <data name="PackageConfiguration_PackageList_SQL_Server_2014_with_Advanced_Services__64_bit__patch" xml:space="preserve">
-    <value>SQL Server 2014 with Advanced Services (64-bit) patch</value>
+    <value>SQL Server 2014 med Advanced Services (64-bit) oppdatering</value>
   </data>
   <data name="PackageConfiguration_PackageList__NET_Framework_3_5" xml:space="preserve">
     <value>.NET Framework 3.5</value>
   </data>
   <data name="WixBootstrapper_RestartPendingDialogBody" xml:space="preserve">
-    <value>There is a restart pending. Please restart your computer before attempting to install {0}.</value>
+    <value>En omstart venter. Vennligst foreta omstart av datamaskinen før du forsøker å installere {0}.</value>
   </data>
   <data name="WixBootstrapper_RestartPendingDialogTitle" xml:space="preserve">
-    <value>{0} - Setup</value>
+    <value>{0} - Oppsett</value>
   </data>
   <data name="FinishErrorPage_FinishErrorSqlServerRebootPending" xml:space="preserve">
-    <value>SQL Server setup failed because a reboot is pending. Please reboot your computer and try again.</value>
+    <value>Oppsett av SQL Server feilet da en omstart venter. Vennligst kjør omstart av datamaskinen og prøv igjen.</value>
   </data>
   <data name="AdvancedConfigurationPage_SqlServerInstanceInstallDirLabel" xml:space="preserve">
-    <value>SQL Server instance directory</value>
+    <value>Folder for SQL Server instansen</value>
   </data>
   <data name="FinishPage_StartMicrosoftOutlook" xml:space="preserve">
     <value>Start Microsoft Outlook</value>
   </data>
   <data name="ProgressPage_ProgressExecuteUninstallEntryText" xml:space="preserve">
-    <value>Removing {0}</value>
+    <value>Fjerner {0}</value>
   </data>
   <data name="WelcomePage_Title" xml:space="preserve">
-    <value>The Best CRM for Outlook. Ever.</value>
+    <value>Den Beste CRM for Outlook noen gang.</value>
   </data>
 </root>
