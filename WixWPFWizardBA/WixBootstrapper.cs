@@ -24,7 +24,9 @@ namespace WixWPFWizardBA
 
         protected override void Run()
         {
+#if DEBUG
             Debugger.Launch();
+#endif
 
             var code = int.Parse(this.Engine.FormatString("[SystemLanguageID]"));
             var cultureInfo = CultureInfo.GetCultureInfo(code);
