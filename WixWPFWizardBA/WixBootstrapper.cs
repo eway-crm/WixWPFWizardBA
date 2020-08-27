@@ -28,7 +28,7 @@ namespace WixWPFWizardBA
             Debugger.Launch();
 #endif
 
-            var code = int.Parse(this.Engine.FormatString("[SystemLanguageID]"));
+            var code = int.Parse(this.Engine.FormatString("[UserLanguageID]"));
             var cultureInfo = CultureInfo.GetCultureInfo(code);
 
             Thread.CurrentThread.CurrentCulture = cultureInfo;
