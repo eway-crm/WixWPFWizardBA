@@ -34,6 +34,7 @@
 
     <BootstrapperApplicationRef Id="ManagedBootstrapperApplicationHost">
       <Payload SourceFile="$(var.WixWPFWizardBA.TargetDir)\BootstrapperCore.config"/>
+      <Payload SourceFile="$(var.WixWPFWizardBA.TargetDir)\PresentationFramework.Aero2.dll"/>
       <Payload SourceFile="$(var.WixWPFWizardBA.TargetDir)\Ookii.Dialogs.Wpf.dll"/>
       <Payload SourceFile="$(var.WixWPFWizardBA.TargetPath)"/>
       <!-- To support localisation, we have to include the sattelite assemblies too! -->
