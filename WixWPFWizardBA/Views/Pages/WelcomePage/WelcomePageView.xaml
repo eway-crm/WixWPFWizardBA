@@ -12,10 +12,12 @@
              d:DataContext="{d:DesignInstance welcomePage:WelcomePageViewModel}"
              d:DesignHeight="240"
              d:DesignWidth="507"
-             mc:Ignorable="d">
+             mc:Ignorable="d"
+             xmlns:converters="clr-namespace:WixWPFWizardBA.Converters">
     <UserControl.Resources>
         <ResourceDictionary>
             <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter" />
+            <converters:InvertedBooleanToVisibilityConverter x:Key="InvertedBooleanToVisibilityConverter" />
         </ResourceDictionary>
     </UserControl.Resources>
     <DockPanel Margin="0 0 0 60"
@@ -26,7 +28,7 @@
                    FontSize="23"
                    Foreground="#e42f25"
                    Text="{x:Static wixWpfWizardBa:Localisation.WelcomePage_Title}"
-                   Visibility="{Binding IsEnabled, ElementName=btnInstall, Converter={StaticResource BooleanToVisibilityConverter}}"></TextBlock>
+                   Visibility="{Binding IsEnabled, ElementName=btnUninstall, Converter={StaticResource InvertedBooleanToVisibilityConverter}}"></TextBlock>
         <DockPanel VerticalAlignment="Bottom" DockPanel.Dock="Bottom">
             <Button Command="{Binding LaunchInstallCommand}"
                     DockPanel.Dock="Top"
@@ -54,7 +56,8 @@
                     BorderBrush="#858585"
                     FontFamily="Segoe UI"
                     FontSize="22"
-                    Visibility="{Binding RelativeSource={RelativeSource Self}, Path=IsEnabled, Converter={StaticResource BooleanToVisibilityConverter}}">
+                    Visibility="{Binding RelativeSource={RelativeSource Self}, Path=IsEnabled, Converter={StaticResource BooleanToVisibilityConverter}}"
+                    x:Name="btnUninstall">
                 <TextBlock Text="{x:Static wixWpfWizardBa:Localisation.WelcomePage_UninstallButtonText}"
                            Foreground="#858585"
                            TextWrapping="Wrap" />
@@ -69,7 +72,8 @@
                     BorderBrush="#858585"
                     FontFamily="Segoe UI"
                     FontSize="22"
-                    Visibility="{Binding RelativeSource={RelativeSource Self}, Path=IsEnabled, Converter={StaticResource BooleanToVisibilityConverter}}">
+                    Visibility="{Binding RelativeSource={RelativeSource Self}, Path=IsEnabled, Converter={StaticResource BooleanToVisibilityConverter}}"
+                    x:Name="btnUpdate">
                 <TextBlock Text="{x:Static wixWpfWizardBa:Localisation.WelcomePage_UpdateButtonText}"
                            Foreground="#858585"
                            TextWrapping="Wrap" />
