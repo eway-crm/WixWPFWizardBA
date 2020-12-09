@@ -27,7 +27,7 @@
                    HorizontalAlignment="Center"
                    FontFamily="Segoe UI"
                    Foreground="#e42f25"
-                   Margin="0 0 0 50">
+                   Margin="0 0 0 30">
             <TextBlock.Style>
                 <Style TargetType="TextBlock">
                     <Style.Triggers>
