@@ -15,7 +15,6 @@ namespace WixWPFWizardBA.Common
 
     public class PackageInstallationStrategyBase<TParam, TInstallationType> : IPackageInstallationStrategy
     {
-        XNamespace ManifestNamespace = "http://schemas.microsoft.com/wix/2010/BootstrapperApplicationData";
         Dictionary<string, string> packages;
 
         private readonly TParam _param;
@@ -27,25 +26,9 @@ namespace WixWPFWizardBA.Common
             this.PackageList = packageList;
             this.InstallationTypeProvider = installationTypeProvider;
 
-            this.packages = this.ApplicationData.Descendants(ManifestNamespace + "WixPackageProperties").
+            this.packages = BootstrapperApplicationData.ApplicationData.Descendants(BootstrapperApplicationData.ManifestNamespace + "WixPackageProperties").
                 Where(x => x.Attribute("DisplayName") != null).
                 ToDictionary(x => (string)x.Attribute("Package"), y => (string)y.Attribute("DisplayName"));
-        }
-
-        public XElement ApplicationData
-        {
-            get
-            {
-                var workingFolder = Path.GetDirectoryName(this.GetType().Assembly.Location);
-                var bootstrapperDataFilePath = Path.Combine(workingFolder, "BootstrapperApplicationData.xml");
-
-                using (var reader = new StreamReader(bootstrapperDataFilePath))
-                {
-                    var xml = reader.ReadToEnd();
-                    var xDocument = XDocument.Parse(xml);
-                    return xDocument.Element(ManifestNamespace + "BootstrapperApplicationData");
-                }
-            }
         }
 
         public IList<Package<TParam, TInstallationType>> PackageList { get; }

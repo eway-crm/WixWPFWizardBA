@@ -10,6 +10,7 @@ namespace WixWPFWizardBA.Common
     using System.Linq;
     using System.Windows;
     using Microsoft.Tools.WindowsInstallerXml.Bootstrapper;
+    using WixWPFWizardBA.Utilities;
 
     public abstract class BootstrapperManager
     {
@@ -502,12 +503,43 @@ namespace WixWPFWizardBA.Common
             }
         }
 
+        private bool CheckConditions()
+        {
+            foreach (var balCondition in BootstrapperApplicationData.ApplicationData.Descendants(BootstrapperApplicationData.ManifestNamespace + "WixBalCondition"))
+            {
+                string condition = balCondition.Attribute("Condition").Value;
+                string message = balCondition.Attribute("Message").Value;
+
+                if (!this.Bootstrapper.Engine.EvaluateCondition(condition))
+                {
+                    this.BurnInstallationState = BurnInstallationState.Failed;
+                    this.Log(LogLevel.Standard, $"Bal condition '{condition}' failed.");
+                    this.ExecuteOnDispatcherIfInteractive(
+                        () =>
+                            MessageBox.Show(WixBootstrapper.RootView,
+                                message,
+                                this.Bootstrapper.BundleName,
+                                MessageBoxButton.OK,
+                                MessageBoxImage.Error));
+                    this.ShutDownWithCancelCode();
+                    return false;
+                }
+            }
+
+            return true;
+        }
+
         private void Bootstrapper_DetectComplete(object sender, DetectCompleteEventArgs e)
         {
             this.Log(LogLevel.Debug,
                 $"Bootstrapper has called {nameof(this.Bootstrapper_DetectComplete)}");
+
             // Allow the PackageInstallationStrategy to do a further investigation of the system.
             this.PackageInstallationStrategy.DetectAdditionalInformation();
+
+            // Check bal conditions
+            if (!this.CheckConditions())
+                return;
 
             if (this.VersionStatus == VersionStatus.Current)
             {

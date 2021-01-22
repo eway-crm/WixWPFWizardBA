@@ -77,6 +77,7 @@
     <Compile Include="SimpleCommand.cs" />
     <Compile Include="SqlServerInstallationType.cs" />
     <Compile Include="Common\UpdateState.cs" />
+    <Compile Include="Utilities\BootstrapperApplicationData.cs" />
     <Compile Include="Utilities\MaskAttachedProperty.cs" />
     <Compile Include="Utilities\RegistryUtilities.cs" />
     <Compile Include="Utilities\SystemInformationUtilities.cs" />
