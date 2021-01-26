@@ -32,7 +32,7 @@
               bal:Overridable="yes"
               Value="Unknown" />
     
-    <bal:Condition Message="Windows 7 or later required.">
+    <bal:Condition Message="#(loc.ConditionWindows7)">
       VersionNT >= v6.1
     </bal:Condition>
     

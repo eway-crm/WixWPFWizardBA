@@ -223,6 +223,24 @@ namespace WixWPFWizardBA {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to None of the supported Microsoft Outlook versions (2003-2019) has been found..
+        /// </summary>
+        public static string ConditionOutlookInstalled {
+            get {
+                return ResourceManager.GetString("ConditionOutlookInstalled", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Windows 7 is the minimum operating system supported by eWay-CRM..
+        /// </summary>
+        public static string ConditionWindows7 {
+            get {
+                return ResourceManager.GetString("ConditionWindows7", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Additional settings.
         /// </summary>
         public static string ConfigurationPage_AdditionalServerSettingsHeader {

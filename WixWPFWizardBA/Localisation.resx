@@ -420,4 +420,10 @@
   <data name="WelcomePage_Title" xml:space="preserve">
     <value>The Best CRM for Outlook. Ever.</value>
   </data>
+  <data name="ConditionOutlookInstalled" xml:space="preserve">
+    <value>None of the supported Microsoft Outlook versions (2003-2019) has been found.</value>
+  </data>
+  <data name="ConditionWindows7" xml:space="preserve">
+    <value>Windows 7 is the minimum operating system supported by eWay-CRM.</value>
+  </data>
 </root>

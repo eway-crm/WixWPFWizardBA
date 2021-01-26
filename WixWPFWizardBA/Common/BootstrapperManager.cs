@@ -8,6 +8,7 @@ namespace WixWPFWizardBA.Common
     using System.Collections.Generic;
     using System.ComponentModel;
     using System.Linq;
+    using System.Text.RegularExpressions;
     using System.Windows;
     using Microsoft.Tools.WindowsInstallerXml.Bootstrapper;
     using WixWPFWizardBA.Utilities;
@@ -15,6 +16,8 @@ namespace WixWPFWizardBA.Common
     public abstract class BootstrapperManager
     {
         private const string BurnBundleVersionVariable = "WixBundleVersion";
+
+        private readonly Regex locRegex = new Regex(@"#\(loc.(\S+)\)", RegexOptions.Singleline);
 
         public const int CancelErrorCode = 1602;
         private readonly IList<string> _bundlesToUpgrade;
@@ -512,6 +515,12 @@ namespace WixWPFWizardBA.Common
 
                 if (!this.Bootstrapper.Engine.EvaluateCondition(condition))
                 {
+                    var match = locRegex.Match(message);
+                    if (match.Success && match.Groups.Count == 2)
+                    {
+                        message = Localisation.ResourceManager.GetString(match.Groups[1].Value);
+                    }
+
                     this.BurnInstallationState = BurnInstallationState.Failed;
                     this.Log(LogLevel.Standard, $"Bal condition '{condition}' failed.");
                     this.ExecuteOnDispatcherIfInteractive(

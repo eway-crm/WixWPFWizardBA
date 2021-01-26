@@ -171,6 +171,12 @@
   <data name="CancelUnavailableMessageBoxTitle" xml:space="preserve">
     <value>{0} - Установка</value>
   </data>
+  <data name="ConditionOutlookInstalled" xml:space="preserve">
+    <value>Ни одна из поддерживаемых версий Microsoft Outlook (2003-2019) не была найдена.</value>
+  </data>
+  <data name="ConditionWindows7" xml:space="preserve">
+    <value>Поддерживаются все версии операционной системы Windows, начиная с Windows 7.</value>
+  </data>
   <data name="ConfigurationPage_AdditionalServerSettingsHeader" xml:space="preserve">
     <value>Дополнительные настройки</value>
   </data>

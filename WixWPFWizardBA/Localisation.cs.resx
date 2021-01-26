@@ -420,4 +420,10 @@
   <data name="WelcomePage_Title" xml:space="preserve">
     <value>Nejlepší CRM v Outlooku.</value>
   </data>
+  <data name="ConditionOutlookInstalled" xml:space="preserve">
+    <value>Žádná z podporovaných verzí Microsoft Outlook (2003-2019) nebyla nalezena.</value>
+  </data>
+  <data name="ConditionWindows7" xml:space="preserve">
+    <value>Windows 7 je minimální verze operačního systému, kterou eWay-CRM podporuje.</value>
+  </data>
 </root>
