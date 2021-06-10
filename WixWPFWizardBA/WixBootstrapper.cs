@@ -29,7 +29,18 @@ namespace WixWPFWizardBA
 #endif
 
             var code = int.Parse(this.Engine.FormatString("[UserLanguageID]"));
-            var cultureInfo = CultureInfo.GetCultureInfo(code);
+            CultureInfo cultureInfo;
+
+            try
+            {
+                cultureInfo = CultureInfo.GetCultureInfo(code);
+            }
+            catch (CultureNotFoundException)
+            {
+                this.Engine.Log(LogLevel.Debug, $"Unable to get culture info for '{code}'");
+
+                cultureInfo = new CultureInfo("en-US");
+            }
 
             Thread.CurrentThread.CurrentCulture = cultureInfo;
             Thread.CurrentThread.CurrentUICulture = cultureInfo;
